@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -33,7 +35,9 @@
                     </div>
                 </div>
             </div>
+
             <!-- main -->
+
             <div class="main_contant">
                 <div class="text_box_1">
                     <h1>골드베어의<br>
@@ -50,27 +54,105 @@
     </header>
 
     <section>
-        <div id="second">
-                <div class="headline">
-                    <h2>
-                        <pre>♪♫</pre>함께해요 모두 다 <br>
-                        행복해요 하리보
-                    </h2>
-                </div>
-                <div class="subline">
-                    <p>알록달록, 즐겁고 맛있는 젤리인 하리보는<br>
-                        아이들을 행복하게 해줍니다. 그리고 어른들도요!<br>
-                        100년 동안 하리보는 달콤한 간식과 함께 누구에게나<br>
-                        일상 속 소소한 행복을 전해 드리고 있습니다.</p>
-                </div>
+        <div class="headline">
+            <h2>
+                <pre>♪♫</pre><span>함께해요</span> 모두 다 ~ <span>행복해요</span> 하리보
+            </h2>
+        </div>
+        <div class="subline">
+            <p>알록달록, 즐겁고 맛있는 젤리인 하리보는<br>
+                100년 동안 하리보는 달콤한 간식과 함께 누구에게나<br>
+                일상 속 소소한 행복을 전해 드리고 있습니다.</p>
         </div>
     </section>
 
-    <section>
+    <article>
         <div id="third">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/avo4tQP8Djk" title="하리보 공식 광고" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <img src="img/wave.png" alt="wave">
+            <video src="video/하리보 공식 광고.mp4" loop muted autoplay></video>
+            <img src="img/play.png" alt="play" id="ck">
+            <div id="boxWrap">
+                <div id="box">
+                    <video src="video/하리보 공식 광고.mp4" loop muted autoplay controls></video>
+                    <button id="cbtn">close</button>
+                </div>
+            </div>
+            <img src="img/wave2.png" alt="wave2">
         </div>
-    </section>
+    </article>
+
+    <script>
+
+        $(function () {
+            $('#ck').click(function () {
+                $('#boxWrap').fadeIn();
+            });
+
+            $('#cbtn').click(function () {
+                $('#boxWrap').fadeOut();
+            });
+
+        });
+
+
+        $(document).ready(function () {
+
+            var pixelToMove = 105;
+
+            $("#third").mousemove(function (e) {
+
+                var width = $(this).innerWidth();
+                var height = $(this).innerHeight();
+
+                var newValueX = (e.clientX / width) * pixelToMove;
+                var newValueY = (e.clientY / height) * pixelToMove;
+
+                $(this).children('#ck').css({ left: newValueX + '%', top: newValueY + '%' });
+
+            });
+        });
+
+    </script>
+
+    <article>
+        <div id="color">
+            <div id="forth">
+                <a href="#">
+                    <img src="img/find_1.png" alt="find1">
+                    <div class="text_box_2">
+                        <h1>다양한 하리보를 만나보세요</h1>
+                        <p>하리보는 아이들을 행복하게 해줍니다.<br>그리고 어른들도요!</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <img src="img/find_2.png" alt="find2">
+                    <div class="text_box_2_1">
+                        <h1>하리보를 활용한 레시피를 알아볼까요?</h1>
+                        <p>케이크, 머핀, 아이스크림 등 하리보를 활용한 <br>재미있는 레시피를 발견해 보아요!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <div id="slider">
+        <img src="img/bg_2.png" alt="bg2">
+        <div class="mission">
+            <div class="text_box_3">
+                <span>our mission</span>
+                <h3>High Quality is our highest priority</h3>
+            </div>
+            <div class="haribo_box">
+                <a href=""><img src="img/haribo1.png" alt=""></a>
+                <a href=""><img src="img/haribo2.png" alt=""></a>
+                <a href=""><img src="img/haribo3.png" alt=""></a>
+                <a href=""><img src="img/haribo4.png" alt=""></a>
+                <a href=""><img src="img/haribo5.png" alt=""></a>
+                <a href=""><img src="img/haribo6.png" alt=""></a>
+            </div>
+        </div>
+    </div>
 
 </body>
 
