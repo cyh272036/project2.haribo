@@ -56,7 +56,7 @@
     <section>
         <div class="headline">
             <h2>
-                <pre>♪♫</pre><span>함께해요</span> 모두 다 ~ <span>행복해요</span> 하리보
+                <pre>♪♫</pre><span>함께해요</span> 모두 다, <span>행복해요</span> 하리보
             </h2>
         </div>
         <div class="subline">
@@ -112,15 +112,39 @@
             });
         });
 
+        $(document).ready(function () {
+            let color = ['#ece400', '#ea6300', '#a7b532', '#ab000f', '#d50300', '#dfdbd1'];
+            let idx;
+
+            $('.product_img').hover(function () {
+                idx = $(this).index();
+                $('.bgcolor').css({ backgroundColor: color[idx] });
+            }, function () {
+                $('.bgcolor').css({ backgroundColor: '#ffc402' });
+            });
+        });
+
+        function slide() {
+            $('.slide').stop().animate({ marginLeft: -500 }, 1200, function () {
+                $('.slide li:first').appendTo('.slide');
+                $('.slide').css({ marginLeft: 0 });
+            });
+        }
+        setInterval(slide, 3500);
+
     </script>
 
     <article>
         <div id="color">
+            <h1>Welcome to <span>haribo</span> world!</h1>
+            <p class="happy">
+                하리보와 함께 즐거운 상상을 해볼까요?
+            </p>
             <div id="forth">
                 <a href="#">
                     <img src="img/find_1.png" alt="find1">
                     <div class="text_box_2">
-                        <h1>다양한 하리보를 만나보세요</h1>
+                        <h2>다양한 하리보를 만나보세요</h2>
                         <p>하리보는 아이들을 행복하게 해줍니다.<br>그리고 어른들도요!</p>
                     </div>
                 </a>
@@ -128,7 +152,7 @@
                 <a href="#">
                     <img src="img/find_2.png" alt="find2">
                     <div class="text_box_2_1">
-                        <h1>하리보를 활용한 레시피를 알아볼까요?</h1>
+                        <h2>하리보를 활용한 레시피를 알아볼까요?</h2>
                         <p>케이크, 머핀, 아이스크림 등 하리보를 활용한 <br>재미있는 레시피를 발견해 보아요!</p>
                     </div>
                 </a>
@@ -137,20 +161,91 @@
     </article>
 
     <div id="slider">
-        <img src="img/bg_2.png" alt="bg2">
+        <div class="bgcolor"></div>
         <div class="mission">
             <div class="text_box_3">
                 <span>our mission</span>
                 <h3>High Quality is our highest priority</h3>
             </div>
             <div class="haribo_box">
-                <a href=""><img src="img/haribo1.png" alt=""></a>
-                <a href=""><img src="img/haribo2.png" alt=""></a>
-                <a href=""><img src="img/haribo3.png" alt=""></a>
-                <a href=""><img src="img/haribo4.png" alt=""></a>
-                <a href=""><img src="img/haribo5.png" alt=""></a>
-                <a href=""><img src="img/haribo6.png" alt=""></a>
+                <div class="product_img">
+                    <img src="img/haribo1.png" alt="">
+                </div>
+                <div class="product_img">
+                    <img src="img/haribo2.png" alt="">
+                </div>
+                <div class="product_img">
+                    <img src="img/haribo3.png" alt="">
+                </div>
+                <div class="product_img">
+                    <img src="img/haribo4.png" alt="">
+                </div>
+                <div class="product_img">
+                    <img src="img/haribo5.png" alt="">
+                </div>
+                <div class="product_img">
+                    <img src="img/haribo6.png" alt="">
+                </div>
             </div>
+        </div>
+    </div>
+
+    <div id="slider2">
+        <div id="slidewrap">
+            <ul class="slide">
+                <li><img src="img/grape.png" alt="slide image"></li>
+                <li><img src="img/staremix.png" alt="slide image"></li>
+                <li><img src="img/pico.png" alt="slide image"></li>
+            </ul>
+        </div>
+
+        <div class="text_box_4">
+            <h1>Every happy moment</h1>
+            <p>하리보가 준비한 새로운 제품을 통해 <br>
+                일상의 행복을 더해보세요.</p>
+            <a href="#"><span>신제품 더보기 ></span></a>
+        </div>
+        <div id="slidewrap2">
+            <ul class="slide_2">
+                <a href="">
+                    <div class="imgbox">
+                        <li>
+                            <img src="img/fruite.png" alt="slide image2">
+                            <p>Fruit</p>
+                        </li>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="imgbox">
+                        <li>
+                            <img src="img/chracter.png" alt="slide image2">
+                            <p>Character</p>
+                        </li>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="imgbox">
+                        <li>
+                            <img src="img/special.png" alt="slide image2">
+                            <p>Special</p>
+                        </li>
+                    </div>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bar">
+        <img src="img/bar.png" alt="">
+    </div>
+
+    <div id="slider3">
+        <div class="text_box_5">
+            <h1>Colorful and diverse</h1>
+            <p>작은부분까지 사랑을 담아 </p>
+            <a href=""><span>모든 제품 보기 ></span></a>
         </div>
     </div>
 
