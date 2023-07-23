@@ -126,6 +126,7 @@ header {
     font-size: 5rem;
     line-height: 90px;
     filter: drop-shadow(4px 4px 4px #252525);
+    margin-bottom: 10px;
 }
 
 .main_contant .text_box_1 p {
@@ -399,13 +400,12 @@ img[alt="bg2"] {
 
 .mission {
     width: 70%;
-    height: 42vh;
+    height: 45vh;
     position: absolute;
     left: 50%;
     bottom: 50px;
     transform: translate(-50%, 0%);
     margin: 0 auto;
-
 }
 
 .mission .text_box_3 {
@@ -414,7 +414,6 @@ img[alt="bg2"] {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 1.2rem;
-    margin-top: 17px;
     text-align: center;
     margin: 0 auto;
 }
@@ -428,7 +427,23 @@ img[alt="bg2"] {
     width: 100%;
     height: auto;
     color: #005dad;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.mission .text_box_3 button {
+    background-color: #fff;
+    border: none;
+    font-family: 'GmarketSansMedium';
+    border-radius: 20px;
+    padding: 8px 50px;
+}
+
+.mission .text_box_3 button:hover {
+    background-color: #ed1c24;
+    color: #fff;
+    font-weight: bold;
 }
 
 .mission .haribo_box {
@@ -498,13 +513,14 @@ img[alt="bg2"] {
     font-size: 3rem;
     margin-top: 17px;
     margin: 0 auto;
+    margin-bottom: 5px;
 }
 
 .text_box_4 p {
     font-family: 'GmarketSansMedium';
     color: #000000;
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 .text_box_4 a span {
@@ -531,7 +547,7 @@ img[alt="bg2"] {
     justify-content: space-between;
 }
 
-.imgbox{
+.imgbox {
     width: 220px;
     height: 220px;
     overflow: hidden;
@@ -539,7 +555,7 @@ img[alt="bg2"] {
     position: relative;
 }
 
-.imgbox img{
+.imgbox img {
     width: 220px;
     height: 220px;
     transition: .3s;
@@ -551,7 +567,7 @@ img[alt="bg2"] {
     filter: brightness(0.5);
 }
 
-.imgbox li p{
+.imgbox li p {
     position: absolute;
     color: #fff;
     font-size: 1.5rem;
@@ -563,26 +579,26 @@ img[alt="bg2"] {
     transition: all ease 0.5s;
 }
 
-.imgbox img:hover + p{
+.imgbox img:hover+p {
     opacity: 1;
 }
 
-.bar img{
+.bar img {
     width: 100%;
 }
 
-#slider3{
+#slider3 {
     width: 1300px;
     margin-top: 150px;
     margin: 0 auto;
 }
 
-.text_box_5{
+.text_box_5 {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
-.text_box_5 h1{
+.text_box_5 h1 {
     font-family: 'Poppins', sans-serif;
     color: #005dad;
     font-size: 3rem;
@@ -593,21 +609,20 @@ img[alt="bg2"] {
     color: #000000;
     font-size: 1.7rem;
     margin-bottom: 30px;
-    margin-top: -10px;
 }
 
-.text_box_5 a span{
+.text_box_5 a span {
     font-family: 'GmarketSansMedium';
     color: #000000;
     font-size: 1.2rem;
 }
 
-.text_box_5 a span:hover{
+.text_box_5 a span:hover {
     color: #ed1c24;
     transition: .1s;
 }
 
-.img_box_3{
+.img_box_3 {
     width: 1300px;
     height: 530px;
     position: relative;
@@ -629,10 +644,38 @@ img[alt="bg2"] {
     left: 100px;
 }
 
-.two:hover{
-    transform: translateY(-30px);
-    transition: .3s;
+.textbox{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    left: 7px;
+    display: none;
 }
+
+.textbox h3{
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.textbox p{
+    color: #000;
+    font-size: 0.8rem;
+    font-family: 'GmarketSansMedium';
+    line-height: 18px;
+}
+
+.two:hover {
+    transform: translateY(-30px);
+    transition: .3s ease-in-out;
+}
+
+.two:hover .textbox{
+    display: block;
+}
+
 
 .three {
     position: absolute;
@@ -647,11 +690,14 @@ img[alt="bg2"] {
     top: 40px;
 }
 
-.four:hover{
+.four:hover {
     transform: translateY(-30px);
     transition: .3s;
 }
 
+.four:hover .textbox{
+    display: block;
+}
 
 .five {
     position: absolute;
@@ -666,12 +712,16 @@ img[alt="bg2"] {
     bottom: 0;
 }
 
-.six:hover{
+.six:hover {
     transform: translateY(-30px);
     transition: .3s;
 }
 
-.seven {
+.six:hover .textbox{
+    display: block;
+}
+
+.eight {
     position: absolute;
     right: 0;
     top: 20px;
@@ -680,7 +730,7 @@ img[alt="bg2"] {
 }
 
 
-.bgcolor2{
+.bgcolor2 {
     width: 100%;
     height: 800px;
     background-color: #eff7ff;
@@ -690,12 +740,95 @@ img[alt="bg2"] {
     top: -320px;
 }
 
-.bgcolor3{
+.bgcolor3 {
     width: 100%;
-    height: 1000px;
+    height: 1100px;
     background-color: #eff7ff;
     margin: 0 auto;
     position: relative;
     top: 400px;
 }
 
+.img_box_4 {
+    width: 1300px;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.box {
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.img_box{
+    width: 340px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding-top: 20px;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+}
+
+.img{
+    position: absolute;
+}
+
+.img_hover{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.img_box:hover .img_hover{
+    opacity: 1;
+}
+
+.text_box_6 {
+    position: absolute;
+    width: 100%;
+    bottom: 17px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
+
+.text_box_6 h3 {
+    font-family: 'GmarketSansMedium';
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.text_box_6>button {
+    font-family: 'GmarketSansMedium';
+    color: #fff;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+    background-color: none;
+    padding: 5px 45px;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.text_box_6>.green:hover {
+    background-color: #fff;
+    color: #93d801;
+}
+
+.text_box_6>.yellow:hover {
+    background-color: #fff;
+    color: #ffcb02;
+}
+
+.text_box_6>.red:hover {
+    background-color: #fff;
+    color: #f71c2e;
+}

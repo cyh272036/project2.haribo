@@ -73,7 +73,7 @@
             <img src="img/play.png" alt="play" id="ck">
             <div id="boxWrap">
                 <div id="box">
-                    <video src="video/하리보 공식 광고.mp4" loop muted autoplay controls></video>
+                    <video src="video/하리보 공식 광고.mp4" loop muted autoplay controls id="video"></video>
                     <button id="cbtn">close</button>
                 </div>
             </div>
@@ -132,6 +132,10 @@
         }
         setInterval(slide, 3500);
 
+        $('#cbtn').on('click', function () {
+            $('#video').trigger('pause');
+        });
+
     </script>
 
     <article>
@@ -166,6 +170,7 @@
             <div class="text_box_3">
                 <span>our mission</span>
                 <h3>High Quality is our highest priority</h3>
+                <button>자세히 보기</button>
             </div>
             <div class="haribo_box">
                 <div class="product_img">
@@ -201,8 +206,7 @@
 
         <div class="text_box_4">
             <h1>Every happy moment</h1>
-            <p>하리보가 준비한 새로운 제품을 통해 <br>
-                일상의 행복을 더해보세요.</p>
+            <p>하리보가 준비한 새로운 제품을 통해 일상의 행복을 더해보세요.</p>
             <a href="#"><span>신제품 더보기 ></span></a>
         </div>
         <div id="slidewrap2">
@@ -243,25 +247,46 @@
 
     <div id="slider3">
         <div class="text_box_5">
-            <h1>Colorful and diverse</h1>
-            <p>작은부분까지 사랑을 담아 </p>
+            <h1>We love HARIBO</h1>
+            <p>가장 인기있는 제품을 모아봤어요!</p>
             <a href=""><span>모든 제품 보기 ></span></a>
         </div>
 
         <div class="img_box_3">
-                <img src="img/haribo.png" class="one">
+            <img src="img/haribo.png" class="one">
             <a href="#" class="two">
-                <img src="img/haribo_goldbear.png" alt="product_goldbear" >
+                <img src="img/haribo_goldbear.png" alt="product_goldbear">
+                <div class="textbox">
+                    <h3>Goldbaren</h3>
+                    <p>하리보의 시그니처인 곰 모양 젤리는 <br>
+                        파인애플에서부터 레몬 맛까지 <br>
+                        여섯 가지 알록달록한 골드베렌에는 <br>
+                        공유하고 싶은 맛있는 즐거움이 담겨 있습니다.</p>
+                </div>
             </a>
-                <img src="img/cola.png" class="three">
+            <img src="img/cola.png" class="three">
             <a href="#" class="four">
                 <img src="img/haribo_starmix.png" alt="product_starmix">
+                <div class="textbox">
+                    <h3>Starmix</h3>
+                    <p>다채로운 하리보 우주를 향해<br>
+                        맛있는 탐험을 즐겨보세요.<br>
+                        마시멜로우 하트에서부터 우정반지까지 <br>
+                        은하계의 다양한 맛, 온 가족과 함께하세요.</p>
+                </div>
             </a>
-                <img src="img/egg.png" class="five">
-            <a href="#" id="product_frutiy">
-                <img src="img/haribo_fruity.png" class="six">
+            <img src="img/egg.png" class="five">
+            <a href="#" class="six">
+                <img src="img/haribo_fruity.png" class="seven">
+                <div class="textbox">
+                    <h3>Fruity Bussi</h3>
+                    <p>부드러운 마시멜로에 상큼한 과일 젤리가<br>
+                        더해져 사랑스러운 달콤함을 전합니다.<br>
+                        망고,라즈베리,오렌지,복숭아 그리고<br>
+                        살구 맛의 상큼한 과즙을 즐겨보세요!</p>
+                </div>
             </a>
-                <img src="img/jelly2.png" class="seven">
+            <img src="img/jelly2.png" class="eight">
         </div>
 
     </div>
@@ -270,7 +295,45 @@
         <div class="bgcolor3">
             <div class="end">
                 <div class="text_box_5">
-                    
+                    <h1>Colorful and diverse</h1>
+                    <p>작은부분까지 사랑을 담아 </p>
+                    <a href=""><span>모든 제품 보기 ></span></a>
+                </div>
+                <div class="img_box_4">
+
+                    <div class="box" style="background-color: #93d801;">
+                        <div class="img_box">
+                            <img class="img" src="img/quality.png" alt="quality">
+                            <img class="img_hover" src="img/quality_2.png" alt="quality2">
+                        </div>
+                        <div class="text_box_6">
+                            <h3>뛰어난 품질을<br>최우선으로 삼고 있습니다</h3>
+                           <button class="green">가치 알아보기</button>
+                        </div>
+                    </div>
+
+                    <div class="box" style="background-color: #ffcb02;">
+                        <div class="img_box">
+                            <img class="img" src="img/history.png" alt="history">
+                            <img class="img_hover" src="img/history_2.png" alt="history2">
+                        </div>
+                        <div class="text_box_6">
+                            <h3>100년 역사의<br>하리보를 만나보세요</h3>
+                            <button class="yellow">역사 알아보기</button>
+                        </div>
+                    </div>
+
+                    <div class="box" style="background-color: #f71c2e;">
+                        <div class="img_box">
+                            <img class="img" src="img/find.png" alt="find">
+                            <img class="img_hover" src="img/find_hover.png" alt="find2">
+                        </div>
+                        <div class="text_box_6">
+                            <h3>즐겁고 달콤한<br>하리보를 만나 보세요</h3>
+                            <button class="red">제품 알아보기</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
