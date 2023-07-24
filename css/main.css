@@ -597,7 +597,8 @@ img[alt="bg2"] {
     transform: translateX();
     background-image: url(../img/bar.png);
     background-repeat: repeat-x;
-    transform: translate(-100px,0);
+    background-repeat: no-repeat;
+    animation: bar_left 200s linear infinite;
 }
 
 .bar .bar2{
