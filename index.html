@@ -81,63 +81,6 @@
         </div>
     </article>
 
-    <script>
-
-        $(function () {
-            $('#ck').click(function () {
-                $('#boxWrap').fadeIn();
-            });
-
-            $('#cbtn').click(function () {
-                $('#boxWrap').fadeOut();
-            });
-
-        });
-
-
-        $(document).ready(function () {
-
-            var pixelToMove = 105;
-
-            $("#third").mousemove(function (e) {
-
-                var width = $(this).innerWidth();
-                var height = $(this).innerHeight();
-
-                var newValueX = (e.clientX / width) * pixelToMove;
-                var newValueY = (e.clientY / height) * pixelToMove;
-
-                $(this).children('#ck').css({ left: newValueX + '%', top: newValueY + '%' });
-
-            });
-        });
-
-        $(document).ready(function () {
-            let color = ['#ece400', '#ea6300', '#a7b532', '#ab000f', '#d50300', '#dfdbd1'];
-            let idx;
-
-            $('.product_img').hover(function () {
-                idx = $(this).index();
-                $('.bgcolor').css({ backgroundColor: color[idx] });
-            }, function () {
-                $('.bgcolor').css({ backgroundColor: '#ffc402' });
-            });
-        });
-
-        function slide() {
-            $('.slide').stop().animate({ marginLeft: -500 }, 1200, function () {
-                $('.slide li:first').appendTo('.slide');
-                $('.slide').css({ marginLeft: 0 });
-            });
-        }
-        setInterval(slide, 3500);
-
-        $('#cbtn').on('click', function () {
-            $('#video').trigger('pause');
-        });
-
-    </script>
-
     <article>
         <div id="color">
             <h1>Welcome to <span>haribo</span> world!</h1>
@@ -425,6 +368,63 @@
             </div>
         </div>
     </footer>
+
+    <script>
+
+        $(function () {
+            $('#ck').click(function () {
+                $('#boxWrap').fadeIn();
+            });
+
+            $('#cbtn').click(function () {
+                $('#boxWrap').fadeOut();
+            });
+
+        });
+
+
+        $(document).ready(function () {
+
+            var pixelToMove = 105;
+
+            $("#third").mousemove(function (e) {
+
+                var width = $(this).innerWidth();
+                var height = $(this).innerHeight();
+
+                var newValueX = (e.clientX / width) * pixelToMove;
+                var newValueY = (e.clientY / height) * pixelToMove;
+
+                $(this).children('#ck').css({ left: newValueX + '%', top: newValueY + '%' });
+
+            });
+        });
+
+        $(document).ready(function () {
+            let color = ['#ece400', '#ea6300', '#a7b532', '#ab000f', '#d50300', '#dfdbd1'];
+            let idx;
+
+            $('.product_img').hover(function () {
+                idx = $(this).index();
+                $('.bgcolor').css({ backgroundColor: color[idx] });
+            }, function () {
+                $('.bgcolor').css({ backgroundColor: '#ffc402' });
+            });
+        });
+
+        function slide() {
+            $('.slide').stop().animate({ marginLeft: -500 }, 1200, function () {
+                $('.slide li:first').appendTo('.slide');
+                $('.slide').css({ marginLeft: 0 });
+            });
+        }
+        setInterval(slide, 3500);
+
+        $('#cbtn').on('click', function () {
+            $('#video').trigger('pause');
+        });
+
+    </script>
 
 </body>
 
