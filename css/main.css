@@ -25,7 +25,7 @@
 @media all and (max-width:989px) {
     header {
         width: 100%;
-        height: 900px;
+        height: 1400px;
         background-color: #005dad;
     }
 
@@ -42,6 +42,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: wheat;
+        margin: 0 auto;
     }
 
     .menu .logbox {
@@ -54,7 +56,7 @@
     }
 
     .menu .navbox {
-        width: 30%;
+        width: 15%;
         height: 150px;
         display: flex;
         align-items: center;
@@ -62,7 +64,7 @@
     }
 
     .menu .navbox .menu {
-        width: 450px;
+        width: 100%;
         height: 80px;
         background-color: #fff;
         border-radius: 50px;
@@ -85,11 +87,12 @@
         font-weight: 700;
         font-size: 1.5rem;
         color: #ed1c24;
+        display: none;
+        transition: .2s;
     }
 
     .menu .navbox ul li a:hover {
         color: #005dad;
-        transition: .2s;
     }
 
 
@@ -99,6 +102,7 @@
         position: absolute;
         right: 0;
         bottom: 20px;
+        display: none;
     }
 
     .menu .menu_icon img {
@@ -109,13 +113,12 @@
 
     .main_contant {
         width: 100%;
-        margin-top: 120px;
+        margin-top: 170px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        background-color: wheat;
     }
 
     .main_contant .text_box_1 {
@@ -155,7 +158,7 @@
     }
 
     .main_contant .img_box_2 {
-        width: 50%;
+        width: 100%;
         height: 600px;
         position: relative;
         cursor: pointer;
@@ -165,6 +168,7 @@
     .main_contant .img_box_2 a img[alt="100years"] {
         position: absolute;
         bottom: -60px;
+        left: 20%;
         width: 230px;
         height: 260px;
         z-index: 3;
@@ -178,6 +182,9 @@
     .main_contant .img_box_2 a img[alt="goldbear"] {
         filter: drop-shadow(5px 5px 5px #252525);
         position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
     }
 
     /*main */
@@ -291,9 +298,10 @@
         transition: .2s;
     }
 
+
     #color {
         width: 100%;
-        height: 1750px;
+        height: 2500px;
         background-color: #005dad;
         z-index: 3;
         position: relative;
@@ -318,13 +326,16 @@
         font-size: 1.7rem;
     }
 
+
     #forth {
         width: 100%;
-        height: 1400px;
+        height: 1200px;
         margin: 0 auto;
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 40px;
+        margin-top: 80px;
     }
 
     #forth a {
@@ -343,21 +354,21 @@
         padding-left: 20px;
         font-family: 'GmarketSansMedium';
         color: #fff;
-        font-size: 1.1rem;
+        font-size: 2.4vw;
         margin-top: 17px;
+        text-align: center;
     }
 
     #forth .text_box_2 p {
         margin-top: 10px;
         line-height: 24px;
         color: #000;
-        font-size: 1.1em;
         line-height: 25px;
         margin-bottom: 100px;
     }
 
     #forth img[alt="find2"] {
-        margin-top: 200px;
+        margin-top: -50px;
         width: 100%;
     }
 
@@ -374,19 +385,18 @@
     #forth .text_box_2_1 {
         width: 100%;
         height: auto;
-        padding-left: 20px;
         font-family: 'GmarketSansMedium';
         text-align: right;
         color: #fff;
-        font-size: 1.1rem;
+        font-size: 2.4vw;
         margin-top: 17px;
+        text-align: center;
     }
 
     #forth .text_box_2_1 p {
         margin-top: 10px;
         line-height: 24px;
         color: #000;
-        font-size: 1.1em;
         line-height: 25px;
     }
 
@@ -431,7 +441,7 @@
     }
 
     .mission .text_box_3 span {
-        font-size: 2rem;
+        font-size: 3vw;
         color: #fff;
     }
 
@@ -439,9 +449,9 @@
         width: 100%;
         height: auto;
         color: #005dad;
-        font-size: 3.2rem;
-        margin-top: -5px;
+        font-size: 6.3vw;
         margin-bottom: 5px;
+        line-height: 73px;
     }
 
     .mission .text_box_3 button {
@@ -450,6 +460,7 @@
         font-family: 'GmarketSansMedium';
         border-radius: 20px;
         padding: 8px 50px;
+        margin-top: 18px;
     }
 
     .mission .text_box_3 button:hover {
@@ -459,10 +470,9 @@
     }
 
     .mission .haribo_box {
-        width: 60%;
-        height: 17vh;
+        width: 70%;
         margin: 0 auto;
-        margin-top: 80px;
+        margin-top: 90px;
         display: flex;
         flex-wrap: nowrap;
         align-content: center;
@@ -471,38 +481,40 @@
 
 
     .product_img img {
-        width: 6vw;
+        width: 8vw;
         margin-top: -50px;
     }
 
     #slider2 {
         width: 100%;
-        height: 630px;
+        height: 1250px;
         margin: 0 auto;
         position: relative;
         margin-top: 150px;
         margin-bottom: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
 
     #slidewrap {
-        width: 500px;
-        height: 500px;
-        margin: 50px auto;
-        position: absolute;
-        left: 0;
+        width: 700px;
+        height: 700px;
+        margin: 0 auto;
         overflow: hidden;
-        border-top-left-radius: 250px;
-        border-top-right-radius: 250px;
+        border-top-left-radius: 350px;
+        border-top-right-radius: 350px;
     }
 
     .slide {
-        width: 1500px;
+        width: 2400px;
     }
 
     .slide>li {
-        width: 500px;
-        height: 500px;
+        width: 700px;
+        height: 700px;
         float: left;
     }
 
@@ -512,10 +524,8 @@
     }
 
     .text_box_4 {
-        width: 580px;
-        position: absolute;
-        right: 120px;
-        top: 110px;
+        width: 700px;
+        text-align: center;
     }
 
     .text_box_4 h1 {
@@ -548,9 +558,6 @@
     #slidewrap2 {
         width: 680px;
         height: 230px;
-        position: absolute;
-        right: 25px;
-        bottom: 70px;
     }
 
     .slide_2 {
@@ -599,8 +606,7 @@
         height: 120px;
         position: relative;
         z-index: 100;
-        top: 170px;
-        margin-bottom: 100px;
+        bottom: -950px;
     }
 
     .bar .bar1 {
@@ -640,7 +646,7 @@
     }
 
     #slider3 {
-        width: 1300px;
+        width: 100%;
         margin-top: 150px;
         margin: 0 auto;
     }
@@ -648,6 +654,7 @@
     .text_box_5 {
         text-align: center;
         padding-top: 150px;
+        z-index: 300;
     }
 
     .text_box_5 h1 {
@@ -675,25 +682,85 @@
     }
 
     .img_box_3 {
-        width: 1300px;
-        height: 530px;
+        width: 100%;
         position: relative;
         z-index: 40;
-        margin-top: 50px;
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .textbox {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        text-align: center;
+        left: 7px;
+        display: none;
+    }
+
+    .textbox h3 {
+        color: #000;
+        font-size: 1.5rem;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .textbox p {
+        color: #000;
+        font-size: 0.8rem;
+        font-family: 'GmarketSansMedium';
+        line-height: 18px;
+    }
+
+    
+    .bgcolor2 {
+        width: 100%;
+        height: 800px;
+        background-color: #eff7ff;
+        border-radius: 50%;
+        z-index: 30;
+        position: relative;
+        top: 150px;
+
+    }
+
+    .bgcolor2_1 {
+        width: 100%;
+        height: 1400px;
+        background-color: #eff7ff;
+        z-index: 30;
+        position: absolute;
+        top: 400px;
+
+    }
+
+    .img_box_sq {
+        width: 100%;
+        height: 1000px;
+        position: absolute;
+        top: -520px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
 
     .one {
         position: absolute;
-        bottom: 0;
+        top: 0;
+        left: 30%;
         z-index: 50;
-        width: 170px;
+        width: 120px;
         transform: rotate(25deg);
     }
 
     .two {
         position: absolute;
-        bottom: 0;
-        left: 100px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        transition: .3s ease-in-out;
     }
 
     .textbox {
@@ -720,8 +787,7 @@
     }
 
     .two:hover {
-        transform: translateY(-30px);
-        transition: .3s ease-in-out;
+        transform: translate(-50%, -30px);
     }
 
     .two:hover .textbox {
@@ -731,20 +797,25 @@
 
     .three {
         position: absolute;
-        top: 0;
-        left: 435px;
+        top: 50%;
+        left: 37%;
         z-index: 40;
+        transform: translate(-50%, 0%);
+        width: 80px;
+        
     }
 
     .four {
         position: absolute;
-        right: 480px;
-        top: 40px;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        transition: .3s;
     }
 
     .four:hover {
-        transform: translateY(-30px);
-        transition: .3s;
+        transform: translate(-50%, -30px);
+        
     }
 
     .four:hover .textbox {
@@ -753,21 +824,23 @@
 
     .five {
         position: absolute;
-        right: 430px;
-        bottom: 0;
-        transform: rotate(25deg);
+        right: 30%;
+        bottom: 0%;
+        transform: rotate(150deg);
+        width: 90px;
     }
 
 
     .six {
         position: absolute;
-        right: 50px;
-        bottom: 0;
+        bottom: -55%;
+        left: 50%;
+        transform: translate(-50%,0);
+        transition: .3s;
     }
 
     .six:hover {
-        transform: translateY(-30px);
-        transition: .3s;
+        transform: translate(-50%, -30px);
     }
 
     .six:hover .textbox {
@@ -776,56 +849,83 @@
 
     .eight {
         position: absolute;
-        right: 0;
-        top: 20px;
-        width: 130px;
-        transform: rotate(25deg);
+        bottom: -20%;
+        width: 100px;
+        transform: rotate(5deg);
+        right: 28%;
     }
 
-
-    .bgcolor2 {
-        width: 100%;
-        height: 800px;
-        background-color: #eff7ff;
-        border-radius: 50%;
-        z-index: 30;
-        position: relative;
-        top: -320px;
-    }
+    
 
     .bgcolor3 {
         width: 100%;
-        height: 1100px;
+        height: 1900px;
         background-color: #eff7ff;
         margin: 0 auto;
         position: relative;
-        top: 400px;
+        margin-top: 800px;
+    }
+
+    .text_box_5_1 {
+        text-align: center;
+        padding-top: 350px;
+        z-index: 300;
+    }
+
+    .text_box_5_1 h1 {
+        font-family: 'Poppins', sans-serif;
+        color: #005dad;
+        font-size: 3rem;
+    }
+
+    .text_box_5_1 p {
+        font-family: 'GmarketSansMedium';
+        color: #000000;
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    .text_box_5_1 a span {
+        font-family: 'GmarketSansMedium';
+        color: #000000;
+        font-size: 1.2rem;
+    }
+
+    .text_box_5_1 a span:hover {
+        color: #ed1c24;
+        transition: .1s;
     }
 
     .img_box_4 {
-        width: 1300px;
-        height: 600px;
+        width: 100%;
+        height: 1000px;
+        margin-top: 100px;
         display: flex;
-        justify-content: space-evenly;
-        margin: 0 auto;
-        padding-top: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-evenly;
     }
 
     .box {
-        width: 400px;
-        height: 450px;
+        width: 88%;
+        height: 30%;
         border-radius: 20px;
         position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: nowrap;
     }
 
     .img_box {
-        width: 340px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        padding-top: 20px;
-        transform: translate(-50%, 0%);
+        width: 50%;
+        position: relative;
+        margin-left: 50px;
         cursor: pointer;
+        height: 260px;
+        overflow: hidden;
+        top: 50%;
+        transform: translate(0,-50%);
     }
 
     .img {
@@ -843,20 +943,19 @@
     }
 
     .text_box_6 {
-        position: absolute;
-        width: 100%;
-        bottom: 17px;
-        left: 50%;
-        transform: translate(-50%, 0%);
+        width: 50%;
+        margin-right: 30px;
+        align-self: center;
         text-align: center;
     }
 
     .text_box_6 h3 {
         font-family: 'GmarketSansMedium';
         color: #fff;
-        font-size: 1.3rem;
+        font-size: 2.8vw;
         margin-bottom: 10px;
-        line-height: 28px;
+        line-height: 30px;
+        margin-top: 20px;
     }
 
     .text_box_6>button {
@@ -890,8 +989,7 @@
 
     footer {
         width: 100%;
-        height: 1300px;
-        margin-top: 370px;
+        height: 1150px;
         position: relative;
     }
 
@@ -903,9 +1001,9 @@
 
     .top .imgbg {
         width: 100%;
-        height: 600px;
+        height: 800px;
         background-color: #eff7ff;
-        margin-top: 200px;
+        margin-top: 0px;
         z-index: 5;
         position: absolute;
     }
@@ -918,32 +1016,37 @@
     }
 
     .top h1 {
+        width: 100%;
         position: absolute;
         z-index: 10;
         font-family: 'Poppins', sans-serif;
         color: #eff7ff;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         text-align: center;
         left: 50%;
-        top: 55px;
         transform: translate(-50%, 0);
-        line-height: 60px;
+        line-height: 43px;
     }
 
     .middle {
         position: relative;
-        top: 450px;
-        width: 1300px;
-        height: 150px;
+        width: 100%;
+        height: 300px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
         border-bottom: 1px solid #b3b3b3;
+        align-content: space-between;
+        justify-content: space-evenly;
         z-index: 10;
+        padding: 0 30px;
+        padding-bottom: 40px;
+        top: 270px;
     }
 
     .icon {
-        width: 23%;
+        width: 45%;
         height: 100px;
         display: flex;
         justify-content: space-between;
@@ -952,14 +1055,13 @@
     }
 
     .icon .icon_text {
-        width: 58%;
-        background-color: #eff7ff;
+        width: 50%;
         font-family: 'GmarketSansMedium';
     }
 
     .icon .icon_text h3 {
-        background-color: #eff7ff;
         font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
     }
 
     .icon .icon_text span {
@@ -968,6 +1070,7 @@
         text-decoration-color: #ffc402;
         text-decoration-thickness: 3px;
         font-size: 0.8rem;
+        transition: .3s ease-in-out;
     }
 
     .icon .icon_text span:hover {
@@ -980,28 +1083,34 @@
 
     .bottom {
         width: 100%;
-        height: 500px;
         background-color: #eff7ff;
-        margin: 0 auto;
         z-index: 15;
         position: absolute;
-        bottom: 0;
         margin: 0 auto;
+        bottom: 0px;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
     }
 
     .bottom_textbox {
-        width: 1300px;
-        height: 300px;
+        width: 100%;
+        height: 500px;
         margin: 0 auto;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         margin-top: -100px;
+        background-color: rosybrown;
     }
 
     .bottom_box {
-        width: 32%;
-        height: 300px;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(255, 240, 245);
     }
+
+    
 
     .bottom_box h1 {
         font-family: 'Poppins', sans-serif;
@@ -1011,7 +1120,7 @@
     }
 
     .bottom_box label input {
-        width: 300px;
+        width: 100%;
         height: 55px;
         border-top: none;
         border-left: none;
@@ -1032,7 +1141,7 @@
     .bottom_box p {
         color: #1d1d1d;
         font-family: 'GmarketSansMedium';
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 16px;
     }
 
@@ -1042,6 +1151,7 @@
         font-size: 1rem;
         border: none;
         border-radius: 30px;
+        width: 100%;
         padding: 10px 40px;
         margin-top: 15px;
         background-color: #ffc402;
@@ -1055,17 +1165,12 @@
 
     .bottom_nav2 {
         text-align: center;
-        float: left;
-        margin-top: 5px;
-        margin-left: 50px;
     }
 
     .bottom_nav3 {
         text-align: center;
-        float: right;
         font-family: 'GmarketSansMedium';
-        margin-top: 5px;
-        margin-right: 50px;
+
     }
 
     .bottom_nav1 {
@@ -1083,6 +1188,7 @@
         color: #000;
         font-weight: 600;
         font-size: 1.8rem;
+        margin-top: 30px;
     }
 
     .bottom_nav h1 {
@@ -1713,8 +1819,7 @@
         height: 120px;
         position: relative;
         z-index: 100;
-        top: 170px;
-        margin-bottom: 100px;
+        top: 300px;
     }
 
     .bar .bar1 {
@@ -1791,7 +1896,6 @@
 
     .img_box_3 {
         width: 100%;
-        height: 1600px;
         position: relative;
         z-index: 40;
         margin-top: 100px;
@@ -1824,16 +1928,73 @@
     }
 
     
+    .bgcolor2 {
+        width: 100%;
+        height: 800px;
+        background-color: #eff7ff;
+        border-radius: 50%;
+        z-index: 30;
+        position: relative;
+        top: 150px;
+
+    }
+
+    .bgcolor2_1 {
+        width: 100%;
+        height: 400px;
+        background-color: #eff7ff;
+        z-index: 30;
+        position: absolute;
+        top: 400px;
+    }
+
+    .img_box_sq {
+        width: 100%;
+        height: 900px;
+        position: absolute;
+        top: -520px;
+        background-color: transparent;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
     .one {
+        position: absolute;
+        bottom: 0;
         z-index: 50;
-        width: 170px;
+        width: 120px;
+        left: 20px;
         transform: rotate(25deg);
     }
 
-
     .two {
-        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 70px;
         transition: .3s ease-in-out;
+    }
+
+    .textbox {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        text-align: center;
+        left: 7px;
+        display: none;
+    }
+
+    .textbox h3 {
+        color: #000;
+        font-size: 1.5rem;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .textbox p {
+        color: #000;
+        font-size: 0.8rem;
+        font-family: 'GmarketSansMedium';
+        line-height: 18px;
     }
 
     .two:hover {
@@ -1846,16 +2007,26 @@
 
 
     .three {
+        position: absolute;
+        top: 0;
+        left: 37%;
         z-index: 40;
-        right: 350px;
+        transform: translate(-50%, 0%);
+        width: 80px;
+        
     }
 
     .four {
-        transition: .3s ease-in-out;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        transition: .3s;
     }
 
     .four:hover {
-        transform: translate(0,-30px);
+        transform: translate(-50%, -30px);
+        
     }
 
     .four:hover .textbox {
@@ -1863,13 +2034,20 @@
     }
 
     .five {
-        transform: rotate(25deg);
+        position: absolute;
+        right: 32%;
+        transform: translate(-50%, 0%);
+        bottom: 380px;
+        transform: rotate(150deg);
+        width: 90px;
     }
 
 
     .six {
-
-        transition: .3s ease-in-out;
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+        transition: .3s;
     }
 
     .six:hover {
@@ -1881,70 +2059,81 @@
     }
 
     .eight {
-        width: 130px;
-        transform: rotate(25deg);
-    }
-
-
-    .bgcolor2 {
-        width: 100%;
-        height: 800px;
-    }
-
-    .bgcolor2_1 {
-        width: 100%;
-        height: 800px;
-        border-radius: 50%;
-        background-color: #eff7ff;
-        z-index: 30;
-        margin-top: 150px;
-    }
-
-    .img_box_sq {
-        width: 100%;
-        height: 1600px;
-        position: relative;
-        top: 0px;
-        background-color:transparent;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: center;
+        position: absolute;
+        right: 25px;
+        bottom: 350px;
+        width: 100px;
+        transform: rotate(5deg);
     }
 
     .bgcolor3 {
         width: 100%;
-        height: 2070px;
+        height: 1900px;
         background-color: #eff7ff;
         margin: 0 auto;
         position: relative;
-        top: 150px;
+    }
+
+    .text_box_5_1 {
+        text-align: center;
+        padding-top: 450px;
+        z-index: 300;
+    }
+
+    .text_box_5_1 h1 {
+        font-family: 'Poppins', sans-serif;
+        color: #005dad;
+        font-size: 3rem;
+    }
+
+    .text_box_5_1 p {
+        font-family: 'GmarketSansMedium';
+        color: #000000;
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    .text_box_5_1 a span {
+        font-family: 'GmarketSansMedium';
+        color: #000000;
+        font-size: 1.2rem;
+    }
+
+    .text_box_5_1 a span:hover {
+        color: #ed1c24;
+        transition: .1s;
     }
 
     .img_box_4 {
         width: 100%;
-        height: 500px;
+        height: 1000px;
+        margin-top: 100px;
         display: flex;
-        justify-content: space-evenly;
-        background-color: rebeccapurple;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-evenly;
     }
 
     .box {
-        width: 32%;
-        height: 450px;
+        width: 75%;
+        height: 30%;
         border-radius: 20px;
         position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: nowrap;
     }
 
     .img_box {
-        width: 340px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        padding-top: 20px;
-        transform: translate(-50%, 0%);
+        width: 60%;
+        position: relative;
+        margin-left: 50px;
         cursor: pointer;
+        height: 260px;
+        overflow: hidden;
+        top: 50%;
+        transform: translate(0,-50%);
     }
 
     .img {
@@ -1962,20 +2151,19 @@
     }
 
     .text_box_6 {
-        position: absolute;
-        width: 100%;
-        bottom: 17px;
-        left: 50%;
-        transform: translate(-50%, 0%);
+        width: 50%;
+        margin-right: 50px;
+        align-self: center;
         text-align: center;
     }
 
     .text_box_6 h3 {
         font-family: 'GmarketSansMedium';
         color: #fff;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-bottom: 10px;
-        line-height: 28px;
+        line-height: 30px;
+        margin-top: 20px;
     }
 
     .text_box_6>button {
@@ -2009,8 +2197,7 @@
 
     footer {
         width: 100%;
-        height: 1300px;
-        margin-top: 370px;
+        height: 1150px;
         position: relative;
     }
 
@@ -2059,6 +2246,7 @@
         justify-content: space-between;
         border-bottom: 1px solid #b3b3b3;
         z-index: 10;
+        padding: 0 30px;
     }
 
     .icon {
@@ -2071,14 +2259,13 @@
     }
 
     .icon .icon_text {
-        width: 58%;
-        background-color: #eff7ff;
+        width: 50%;
         font-family: 'GmarketSansMedium';
     }
 
     .icon .icon_text h3 {
-        background-color: #eff7ff;
         font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
     }
 
     .icon .icon_text span {
@@ -2087,6 +2274,7 @@
         text-decoration-color: #ffc402;
         text-decoration-thickness: 3px;
         font-size: 0.8rem;
+        transition: .3s ease-in-out;
     }
 
     .icon .icon_text span:hover {
@@ -2099,19 +2287,17 @@
 
     .bottom {
         width: 100%;
-        height: 500px;
         background-color: #eff7ff;
-        margin: 0 auto;
         z-index: 15;
         position: absolute;
-        bottom: 0;
         margin: 0 auto;
+        bottom: 0px;
         padding: 0 50px;
     }
 
     .bottom_textbox {
         width: 100%;
-        height: 300px;
+        height: 480px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -2120,7 +2306,7 @@
 
     .bottom_box {
         width: 32%;
-        height: 300px;
+        height: 400px;
     }
 
     .bottom_box h1 {
@@ -2198,6 +2384,7 @@
         color: #000;
         font-weight: 600;
         font-size: 1.8rem;
+        margin-top: 30px;
     }
 
     .bottom_nav h1 {
@@ -2596,7 +2783,7 @@
         color: #fff;
         font-size: 1.1rem;
         margin-top: 17px;
-        padding-right: 30px;
+        padding-right: 60px;
     }
 
     #forth .text_box_2_1 p {
@@ -2864,6 +3051,7 @@
 
     .text_box_5 {
         text-align: center;
+        margin-top: 150px;
     }
 
     .text_box_5 h1 {
@@ -2900,7 +3088,7 @@
 
     .bgcolor2 {
         width: 100%;
-        height: 800px;
+        height: 700px;
         background-color: #eff7ff;
         border-radius: 50%;
         z-index: 30;
@@ -2911,11 +3099,11 @@
 
     .bgcolor2_1 {
         width: 100%;
-        height: 870px;
+        height: 822px;
         background-color: #eff7ff;
         z-index: 30;
         position: absolute;
-        top: 400px;
+        top: 350px;
     }
 
     .img_box_sq {
@@ -3000,7 +3188,7 @@
     .five {
         position: absolute;
         right: 430px;
-        bottom: 0;
+        bottom: 45px;
         transform: rotate(25deg);
     }
 
@@ -3023,7 +3211,7 @@
     .eight {
         position: absolute;
         right: 0;
-        top: 20px;
+        top: 90px;
         width: 130px;
         transform: rotate(25deg);
     }
@@ -3034,7 +3222,39 @@
         background-color: #eff7ff;
         margin: 0 auto;
         position: relative;
-        top: 400px;
+        top: 300px;
+        z-index: 500;
+    }
+
+    
+    .text_box_5_1 {
+        text-align: center;
+
+    }
+
+    .text_box_5_1 h1 {
+        font-family: 'Poppins', sans-serif;
+        color: #005dad;
+        font-size: 3rem;
+    }
+
+    .text_box_5_1 p {
+        font-family: 'GmarketSansMedium';
+        color: #000000;
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+        z-index: 300;
+    }
+
+    .text_box_5_1 a span {
+        font-family: 'GmarketSansMedium';
+        color: #000000;
+        font-size: 1.2rem;
+    }
+
+    .text_box_5_1 a span:hover {
+        color: #ed1c24;
+        transition: .1s;
     }
 
     .img_box_4 {
@@ -3125,8 +3345,8 @@
 
     footer {
         width: 100%;
-        height: 1300px;
-        margin-top: 370px;
+        height: 1100px;
+        margin-top: 304px;
         position: relative;
     }
 
@@ -3216,7 +3436,7 @@
 
     .bottom {
         width: 100%;
-        height: 500px;
+        height: 300px;
         background-color: #eff7ff;
         margin: 0 auto;
         z-index: 15;
