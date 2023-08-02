@@ -16,44 +16,53 @@
 
 <body>
     <header>
-        <div id="first">
-            <!-- logo & nav -->
-            <div class="menu">
-                <div class="logbox">
-                    <a href="#"><img src="img/logo.png" alt="logo"></a>
-                </div>
-                <div class="navbox">
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Fun</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu_icon">
-                        <img src="img/menu.png" alt="menu_ch">
-                    </div>
-                </div>
+        <div class="small">
+            <a href="">
+                <div class="logo"><img src="img/logo.png"></div>
+            </a>
+            <div id="a">
+                <a href="#">Products</a>
+                <a href="#">About us</a>
+                <a href="#">Fun</a>
+                <img src="img/menu.png" alt="" id="ch">
             </div>
+            <img src="img/menu_ham.png" id="b">
+        </div>
 
-            <!-- main -->
-
-            <div class="main_contant">
-                <div class="text_box_1">
-                    <h1>골드베어의<br>
-                        100번째 생일!</h1>
-                    <p>골드베어의 100주년, 함께 축하해주세요</p>
-                    <button type="button">축하하기</button>
-                </div>
-                <div class="img_box_2">
-                    <div class="year">
-                    <a href="#"><img src="img/goldbears_icon.png" alt="100years"></a>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn">&times;</a>
+            <div class="overlay-content">
+                <div class="jelly">
+                    <div class="listbox">
+                        <a href="#">Products</a>
+                        <a href="#">About us</a>
+                        <a href="#">Fun</a>
                     </div>
-                    <a href="#"><img src="img/goldbears_img.png" alt="goldbear"></a>
                 </div>
             </div>
         </div>
     </header>
+
+
+    <!-- main -->
+
+    <div class="main">
+        <div class="main_contant">
+            <div class="text_box_1">
+                <h1>골드베어의<br>
+                    100번째 생일!</h1>
+                <p>골드베어의 100주년, 함께 축하해주세요</p>
+                <button type="button">축하하기</button>
+            </div>
+            <div class="img_box_2">
+                <div class="year">
+                    <a href="#"><img src="img/goldbears_icon.png" alt="100years"></a>
+                </div>
+                <a href="#"><img src="img/goldbears_img.png" alt="goldbear"></a>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <section>
         <div class="headline">
@@ -342,7 +351,7 @@
                         수신에 동의하고 당사의 개인정보 보호정책에 동의함을 확인합니다.</p>
                     <button>제출하기</button>
                 </div>
-            
+
                 <div class="bottom_box_1">
                     <div class="bottom_nav1">
                         <h1>Index</h1>
@@ -389,6 +398,17 @@
     </footer>
 
     <script>
+
+        $(document).ready(function () {
+            $('#b').click(function () {
+                $('#myNav').css('width', '100%');
+            });
+
+            $('.closebtn').click(function () {
+                $('#myNav').css('width', '0');
+            });
+        });
+
 
         $(document).ready(function () {
             $('#ck').click(function () {
