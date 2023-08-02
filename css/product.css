@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/*G마켓 산스*/
+/*font-family: 'GmarketSans', san-serif;*/
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*poppins*/
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#slogan {
+    width: 100%;
+    height: 100px;
+    background-color:#003461;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid #eee;
+}
+
+#slogan h3{
+    font-size: 2rem;
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first{
+    background-color: #d3a22d;
+    width: 50%;
+    height: 670px;
+    position: relative;
+    background-image: url(../img/gold.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.one{
+    width: 0%;
+}
+
+.one img {
+    width: 100%;
+}
+
+.second {
+    width: 50%;
+    height: 670px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.two{
+    background-color: #07a4e7;
+    width: 50%;
+    height: 335px;
+}
+
+.two img{
+width: 50%;
+}
+
+.three{
+    background-color: #ffa41b;
+    width: 50%;
+    height: 335px;
+}
+
+.four{
+    background-color: #de0512;
+    width: 50%;
+    height: 335px;
+}
+
+.five{
+    background-color: #67b339;
+    width: 50%;
+    height: 335px;
+}
+
+.third{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.six {
+    background-color: #52b640;
+    width: 25%;
+    height: 335px;
+}
+
+.seven {
+    background-color: #f5c210;
+    width: 25%;
+    height: 335px;
+}
+
+.eight {
+    background-color: #a495bc;
+    width: 25%;
+    height: 335px;
+}
+
+.nine {
+    background-color: #006ac3;
+    width: 25%;
+    height: 335px;
+}
