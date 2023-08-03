@@ -56,23 +56,92 @@
     <section>
         <div class="first">
             <div class="one">
+                <a href="#"><img src="img/haribo_goldbear.png" alt=""></a>
             </div>
         </div>
 
         <div class="second">
-        <div class="two"><img src="img/starmix.png" alt=""></div>
-        <div class="three"></div>
-        <div class="four"></div>
-        <div class="five"></div>
+            <div class="two">
+                <a href="#"><img src="img/starmix.png" class="star"></a>
+                <img src="img/space.jpg" alt="" class="space">
+            </div>
+            <div class="three">
+                <a href=""><img src="img/happy_cola_no.png" alt=""></a>
+                <img src="img/cola_back.jpg" alt="" class="cola">
+            </div>
+            <div class="four">
+                <a href=""><img src="img/worms.png" alt=""></a>
+                <img src="img/worm.jpg" alt="" class="worm">
+            </div>
+            <div class="five">
+                <a href=""><img src="img/fruity_bussi.png" alt=""></a>
+                <img src="img/fruity.jpg" alt="" class="fruity">
+            </div>
         </div>
 
         <div class="third">
-            <div class="six"></div>
-            <div class="seven"></div>
-            <div class="eight"></div>
-            <div class="nine"></div>
+            <div class="six"><img src="img/worms_zero.png" alt=""></div>
+            <div class="seven"><img src="img/happy_cola.png" alt=""></div>
+            <div class="eight"><img src="img/happy_grape.png" alt=""></div>
+            <div class="nine">
+                <div class="nine_textbox">
+                    <h1>알록달록 다양하고<br>
+                        맛있는 과정을<br>
+                        함께 해볼까요?</h1>
+                    <span>하리보 제작 과정 살펴보기 &gt;</span>
+                </div>
+            </div>
         </div>
     </section>
+
+    <script>
+
+        $(document).ready(function () {
+            $('#b').click(function () {
+                $('#myNav').css('width', '100%');
+            });
+
+            $('.closebtn').click(function () {
+                $('#myNav').css('width', '0');
+            });
+        });
+
+
+        $(document).ready(function () {
+            $(".two a img").hover(function () {
+                $(this).parents('.two').css("background", "transparent");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.two').css("background", "#07a4e7");
+                $(this).parent().next().fadeOut();
+            });
+
+            $(".three a img").hover(function () {
+                $(this).parents('.three').css("background", "transparent");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.three').css("background", "#ffa41b");
+                $(this).parent().next().fadeOut();
+            });
+
+            $(".four a img").hover(function () {
+                $(this).parents('.four').css("background", "transparent");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.four').css("background", "#de0512");
+                $(this).parent().next().fadeOut();
+            });
+
+            $(".five a img").hover(function () {
+                $(this).parents('.five').css("background", "transparent");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.five').css("background", "#67b339");
+                $(this).parent().next().fadeOut();
+            });
+
+        });
+    </script>
 
 </body>
 

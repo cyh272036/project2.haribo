@@ -20,21 +20,27 @@
 /*font-family: 'Poppins', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*slogan*/
+
 #slogan {
     width: 100%;
     height: 100px;
-    background-color:#003461;
+    background-color: #003461;
     display: flex;
     align-items: center;
     justify-content: center;
     border-top: 3px solid #eee;
 }
 
-#slogan h3{
+#slogan h3 {
+    width: 80%;
     font-size: 2rem;
     color: #eee;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
+
+/*하리보 제품군*/
 
 section {
     width: 100%;
@@ -42,23 +48,30 @@ section {
     flex-wrap: wrap;
 }
 
-.first{
+a{
+    text-align: center;
+}
+
+
+.first {
     background-color: #d3a22d;
     width: 50%;
     height: 670px;
-    position: relative;
-    background-image: url(../img/gold.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.one{
-    width: 0%;
+.one img{
+    width: 450px;
+    transition: .3s ease-in-out;
 }
 
-.one img {
-    width: 100%;
+.one img:hover {
+    transform: scale(1.1);
 }
+
+
 
 .second {
     width: 50%;
@@ -71,31 +84,118 @@ section {
     background-color: #07a4e7;
     width: 50%;
     height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: .3s linear;
 }
 
-.two img{
-width: 50%;
+.two img {
+    width: 200px;
+    transition: .3s ease-in-out;
 }
 
-.three{
+.two a img:hover {
+    transform: scale(1.1);
+}
+
+.two .space {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.three {
     background-color: #ffa41b;
     width: 50%;
     height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.four{
+.three img{
+    width: 200px;
+    transition: .3s ease-in-out;
+}
+
+.three img:hover {
+    transform: scale(1.1);
+}
+
+.three .cola {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: none;
+}
+
+.four {
     background-color: #de0512;
     width: 50%;
     height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.five{
+.four img{
+    width: 200px;
+    transition: .3s ease-in-out;
+}
+
+.four img:hover {
+    transform: scale(1.1);
+}
+
+.four .worm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: none;
+}
+
+.five {
     background-color: #67b339;
     width: 50%;
     height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.third{
+
+.five img{
+    width: 200px;
+    transition: .3s ease-in-out;
+}
+
+
+.five img:hover {
+    transform: scale(1.1);
+}
+
+.five .fruity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: none;
+}
+
+.third {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -105,22 +205,87 @@ width: 50%;
     background-color: #52b640;
     width: 25%;
     height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.six img{
+    width: 200px;
+    transition: .3s ease-in-out;
+}
+
+.six img:hover {
+    transform: scale(1.1);
+}
+
 
 .seven {
     background-color: #f5c210;
     width: 25%;
     height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seven img{
+    width: 200px;
+    transition: .3s ease-in-out;
+}
+
+.seven img:hover {
+    transform: scale(1.1);
 }
 
 .eight {
     background-color: #a495bc;
     width: 25%;
     height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eight img{
+    width: 200px;
+    transition: .3s ease-in-out;
+}
+
+.eight img:hover{
+    transform: scale(1.1);
 }
 
 .nine {
     background-color: #006ac3;
     width: 25%;
     height: 335px;
+    position: relative;
 }
+
+.nine_textbox{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-family: 'GmarketSans', san-serif;
+}
+
+.nine_textbox h1 {
+    font-size: 2.2em;
+    line-height: 45px;
+    color: #eee;
+    margin-bottom: 15px;
+}
+
+.nine_textbox span {
+    font-size: 1em;
+    color: #eee;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.nine_textbox span:hover {
+    color: #ffd43a;
+}
+
+
