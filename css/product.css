@@ -54,12 +54,24 @@ a{
 
 
 .first {
-    background-color: #d3a22d;
     width: 50%;
     height: 670px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.one {
+    background-color: #d3a22d;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: .3s linear;
+    overflow: hidden;
+    background-repeat: no-repeat;
 }
 
 .one img{
@@ -70,8 +82,6 @@ a{
 .one img:hover {
     transform: scale(1.1);
 }
-
-
 
 .second {
     width: 50%;
@@ -89,6 +99,7 @@ a{
     align-items: center;
     position: relative;
     transition: .3s linear;
+    overflow: hidden;
 }
 
 .two img {
@@ -100,14 +111,6 @@ a{
     transform: scale(1.1);
 }
 
-.two .space {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
 
 .three {
     background-color: #ffa41b;
@@ -116,6 +119,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .3s linear;
+    overflow: hidden;
 }
 
 .three img{
@@ -127,16 +132,6 @@ a{
     transform: scale(1.1);
 }
 
-.three .cola {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    display: none;
-}
-
 .four {
     background-color: #de0512;
     width: 50%;
@@ -144,6 +139,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .four img{
@@ -172,6 +168,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 
@@ -192,7 +189,7 @@ a{
     width: 100%;
     height: 100%;
     z-index: -1;
-    display: none;
+    display: block;
 }
 
 .third {
@@ -208,6 +205,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .six img{
@@ -227,6 +225,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .seven img{
@@ -245,6 +244,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .eight img{
@@ -261,13 +261,14 @@ a{
     width: 25%;
     height: 335px;
     position: relative;
+    overflow: hidden;
 }
 
 .nine_textbox{
     position: absolute;
     top: 20%;
     left: 10%;
-    font-family: 'GmarketSans', san-serif;
+    font-family: 'GmarketSans', 'san-serif';
 }
 
 .nine_textbox h1 {
@@ -289,3 +290,67 @@ a{
 }
 
 
+/*슬라이드*/
+
+article{
+    width: 100%;
+    height: auto;
+}
+
+.question {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.slide_1{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: palegoldenrod;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.question img{
+    width: 40%;
+    border-radius: 200px;
+}
+
+.q_textbox{
+    width: 40%;
+    font-family: 'GmarketSans', 'san-serif';
+}
+
+.q_textbox h1{ 
+    font-size: 4rem; 
+    margin-bottom: 20px;
+    color: #f5c210;
+    font-family: 'Poppins', sans-serif;
+}
+
+.q_textbox h2{ 
+    font-size: 2rem; 
+    margin-bottom: 20px;
+}
+
+.q_textbox p{
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+
+.q_textbox span{
+    font-size: 1.1rem;
+    transition: .3s linear;
+    cursor: pointer;
+    background-color: #f5c210;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.q_textbox span:hover{
+    color: #fff;
+    background-color: #07a4e7;
+}
