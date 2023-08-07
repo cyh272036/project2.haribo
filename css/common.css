@@ -221,3 +221,1918 @@
       display: none;
     }
   }
+
+  /* footer */
+
+  /*400 미만*/
+@media all and (max-width:399px){
+  
+  footer {
+      width: 100%;
+      height: 1450px;
+      position: relative;
+  }
+
+  .top {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .top .imgbg {
+      width: 100%;
+      height: 800px;
+      background-color: #eff7ff;
+      margin-top: 0px;
+      z-index: 5;
+      position: absolute;
+  }
+
+  .top img {
+      width: 100%;
+      height: auto;
+      z-index: 7;
+      position: absolute;
+  }
+
+  .top h1 {
+      width: 80%;
+      position: absolute;
+      z-index: 10;
+      font-family: 'Poppins', sans-serif;
+      color: #eff7ff;
+      font-size: 4vw;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, 0);
+      line-height: 25px;
+  }
+
+  .middle {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      border-bottom: 1px solid #b3b3b3;
+      align-content: space-between;
+      justify-content: space-evenly;
+      z-index: 10;
+      padding: 0 30px;
+      padding-bottom: 40px;
+      top: 150px;
+  }
+
+  .icon {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 13;
+  }
+
+  .icon .icon_text {
+      width: 50%;
+      margin-left: 50px;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.8rem;
+  }
+
+  .icon .icon_text h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.8rem;
+  }
+
+  .icon .icon_text span {
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-color: #ffc402;
+      text-decoration-thickness: 3px;
+      font-size: 0.6rem;
+      transition: .3s ease-in-out;
+  }
+
+  .icon .icon_text span:hover {
+      text-decoration-line: none;
+  }
+
+  .icon .icon_text p {
+      font-size: 0.8rem;
+  }
+
+  .bottom {
+      width: 100%;
+      background-color: #eff7ff;
+      z-index: 15;
+      position: absolute;
+      margin: 0 auto;
+      bottom: 0px;
+      padding: 0 50px;
+      height: 650px;
+  }
+
+  .bottom_textbox {
+      width: 100%;
+      height: 750px;
+      margin: 0 auto;
+      margin-top: -100px;
+      position: relative;
+  }
+
+  .bottom_box_0 {
+      width: 100%;
+  }
+
+  
+  .bottom_box_1 {
+      width: 100%;
+      height: 200px;
+      margin-top: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+
+  }
+
+  .bottom_box_2 {
+      width: 80%;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+      bottom: 0;
+  }
+
+
+  .bottom_box_0 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+      font-size: 1.8rem;
+  }
+
+  .bottom_box_1 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+      width: 100%;
+      font-size: 1.4rem;
+  }
+
+  .bottom_box_2 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+      font-size: 1.4rem;
+  }
+
+  .bottom_box_0 label input {
+      width: 100%;
+      height: 55px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 3px solid black;
+      background: transparent;
+      padding-top: 20px;
+      outline: none;
+  }
+
+  .bottom_box_0 label input::placeholder {
+      color: #ffcb02;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+  }
+
+  .bottom_box_0 p {
+      color: #1d1d1d;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.5rem;
+      line-height: 14px;
+  }
+
+  .bottom_box_0 button {
+      color: #fff;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.8rem;
+      border: none;
+      border-radius: 30px;
+      width: 100%;
+      padding: 10px 40px;
+      margin-top: 15px;
+      background-color: #ffc402;
+      cursor: pointer;
+  }
+
+  .bottom_box_0 button:hover {
+      background-color: #f71c2e;
+      transition: .3s;
+  }
+
+  .bottom_nav2 {
+      text-align: center;
+      width: 50%;
+  }
+
+  .bottom_nav3 {
+      text-align: center;
+      font-family: 'GmarketSansMedium';
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 55px;
+
+  }
+
+  .bottom_nav1 {
+      color: #005dad;
+      text-align: center;
+      width: 100%;
+  }
+
+  .bottom_nav2 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: -10px;
+  }
+
+  .bottom_nav3 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: -10px;
+  }
+
+  .bottom_nav h1 {
+      font-size: 1rem;
+  }
+
+  .bottom_nav2 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 0.7rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav3 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 0.7rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav2 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_nav3 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_icon {
+      margin: 0 auto;
+      width: 240px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .bottom_icon img:hover {
+      transform: scale(1.2);
+      transition: all linear ease-in-out;
+  }
+}
+
+/*400에서 589 사이*/
+@media all and (min-width:400px) and (max-width:589px){
+ 
+  footer {
+      width: 100%;
+      height: 1450px;
+      position: relative;
+  }
+
+  .top {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .top .imgbg {
+      width: 100%;
+      height: 800px;
+      background-color: #eff7ff;
+      margin-top: 0px;
+      z-index: 5;
+      position: absolute;
+  }
+
+  .top img {
+      width: 100%;
+      height: auto;
+      z-index: 7;
+      position: absolute;
+  }
+
+  .top h1 {
+      width: 80%;
+      position: absolute;
+      z-index: 10;
+      font-family: 'Poppins', sans-serif;
+      color: #eff7ff;
+      font-size: 4vw;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, 0);
+      line-height: 25px;
+  }
+
+  .middle {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      border-bottom: 1px solid #b3b3b3;
+      align-content: space-between;
+      justify-content: space-evenly;
+      z-index: 10;
+      padding: 0 30px;
+      padding-bottom: 40px;
+      top: 150px;
+  }
+
+  .icon {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 13;
+  }
+
+  .icon .icon_text {
+      width: 50%;
+      margin-left: 50px;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.8rem;
+  }
+
+  .icon .icon_text h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.8rem;
+  }
+
+  .icon .icon_text span {
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-color: #ffc402;
+      text-decoration-thickness: 3px;
+      font-size: 0.6rem;
+      transition: .3s ease-in-out;
+  }
+
+  .icon .icon_text span:hover {
+      text-decoration-line: none;
+  }
+
+  .icon .icon_text p {
+      font-size: 0.8rem;
+  }
+
+  .bottom {
+      width: 100%;
+      background-color: #eff7ff;
+      z-index: 15;
+      position: absolute;
+      margin: 0 auto;
+      bottom: 0px;
+      padding: 0 50px;
+      height: 650px;
+  }
+
+  .bottom_textbox {
+      width: 100%;
+      height: 750px;
+      margin: 0 auto;
+      margin-top: -100px;
+      position: relative;
+  }
+
+  .bottom_box_0 {
+      width: 100%;
+  }
+
+  
+  .bottom_box_1 {
+      width: 100%;
+      height: 200px;
+      margin-top: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+
+  }
+
+  .bottom_box_2 {
+      width: 80%;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+      bottom: 0;
+  }
+
+
+  .bottom_box_0 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+      font-size: 1.8rem;
+  }
+
+  .bottom_box_1 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+      width: 100%;
+      font-size: 1.4rem;
+  }
+
+  .bottom_box_2 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+      font-size: 1.4rem;
+  }
+
+  .bottom_box_0 label input {
+      width: 100%;
+      height: 55px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 3px solid black;
+      background: transparent;
+      padding-top: 20px;
+      outline: none;
+  }
+
+  .bottom_box_0 label input::placeholder {
+      color: #ffcb02;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+  }
+
+  .bottom_box_0 p {
+      color: #1d1d1d;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.5rem;
+      line-height: 14px;
+  }
+
+  .bottom_box_0 button {
+      color: #fff;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.8rem;
+      border: none;
+      border-radius: 30px;
+      width: 100%;
+      padding: 10px 40px;
+      margin-top: 15px;
+      background-color: #ffc402;
+      cursor: pointer;
+  }
+
+  .bottom_box_0 button:hover {
+      background-color: #f71c2e;
+      transition: .3s;
+  }
+
+  .bottom_nav2 {
+      text-align: center;
+      width: 50%;
+  }
+
+  .bottom_nav3 {
+      text-align: center;
+      font-family: 'GmarketSansMedium';
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 55px;
+
+  }
+
+  .bottom_nav1 {
+      color: #005dad;
+      text-align: center;
+      width: 100%;
+  }
+
+  .bottom_nav2 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: -10px;
+  }
+
+  .bottom_nav3 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: -10px;
+  }
+
+  .bottom_nav h1 {
+      font-size: 1rem;
+  }
+
+  .bottom_nav2 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 0.7rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav3 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 0.7rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav2 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_nav3 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_icon {
+      margin: 0 auto;
+      width: 240px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .bottom_icon img:hover {
+      transform: scale(1.2);
+      transition: all linear ease-in-out;
+  }
+}
+
+/*590에서 692 사이*/
+@media all and (min-width:590px) and (max-width:692px) {
+
+  footer {
+      width: 100%;
+      height: 1450px;
+      position: relative;
+  }
+
+  .top {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .top .imgbg {
+      width: 100%;
+      height: 800px;
+      background-color: #eff7ff;
+      margin-top: 0px;
+      z-index: 5;
+      position: absolute;
+  }
+
+  .top img {
+      width: 100%;
+      height: auto;
+      z-index: 7;
+      position: absolute;
+  }
+
+  .top h1 {
+      width: 80%;
+      position: absolute;
+      z-index: 10;
+      font-family: 'Poppins', sans-serif;
+      color: #eff7ff;
+      font-size: 4.5vw;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, 0);
+      line-height: 35px;
+  }
+
+  .middle {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      border-bottom: 1px solid #b3b3b3;
+      align-content: space-between;
+      justify-content: space-evenly;
+      z-index: 10;
+      padding: 0 30px;
+      padding-bottom: 40px;
+      top: 270px;
+  }
+
+  .icon {
+      width: 45%;
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      z-index: 13;
+  }
+
+  .icon .icon_text {
+      width: 50%;
+      font-family: 'GmarketSansMedium';
+  }
+
+  .icon .icon_text h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+  }
+
+  .icon .icon_text span {
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-color: #ffc402;
+      text-decoration-thickness: 3px;
+      font-size: 0.8rem;
+      transition: .3s ease-in-out;
+  }
+
+  .icon .icon_text span:hover {
+      text-decoration-line: none;
+  }
+
+  .icon .icon_text p {
+      font-size: 1rem;
+  }
+
+  .bottom {
+      width: 100%;
+      background-color: #eff7ff;
+      z-index: 15;
+      position: absolute;
+      margin: 0 auto;
+      bottom: 0px;
+      padding: 0 50px;
+      height: 650px;
+  }
+
+  .bottom_textbox {
+      width: 100%;
+      height: 750px;
+      margin: 0 auto;
+      margin-top: -100px;
+      position: relative;
+  }
+
+  .bottom_box_0 {
+      width: 100%;
+  }
+
+  
+  .bottom_box_1 {
+      width: 100%;
+      height: 200px;
+      margin-top: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+
+  }
+
+  .bottom_box_2 {
+      width: 80%;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+      bottom: 0;
+  }
+
+
+  .bottom_box_0 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_1 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+      width: 100%;
+  }
+
+  .bottom_box_2 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_0 label input {
+      width: 100%;
+      height: 55px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 3px solid black;
+      background: transparent;
+      padding-top: 20px;
+      outline: none;
+  }
+
+  .bottom_box_0 label input::placeholder {
+      color: #ffcb02;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+  }
+
+  .bottom_box_0 p {
+      color: #1d1d1d;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.8rem;
+      line-height: 16px;
+  }
+
+  .bottom_box_0 button {
+      color: #fff;
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      width: 100%;
+      padding: 10px 40px;
+      margin-top: 15px;
+      background-color: #ffc402;
+      cursor: pointer;
+  }
+
+  .bottom_box_0 button:hover {
+      background-color: #f71c2e;
+      transition: .3s;
+  }
+
+  .bottom_nav2 {
+      text-align: center;
+      width: 50%;
+  }
+
+  .bottom_nav3 {
+      text-align: center;
+      font-family: 'GmarketSansMedium';
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 55px;
+
+  }
+
+  .bottom_nav1 {
+      color: #005dad;
+      text-align: center;
+      width: 100%;
+  }
+
+  .bottom_nav2 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+  }
+
+  .bottom_nav3 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+  }
+
+  .bottom_nav h1 {
+      font-size: 1.5rem;
+  }
+
+  .bottom_nav2 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav3 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav2 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_nav3 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_icon {
+      margin: 0 auto;
+      width: 240px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .bottom_icon img:hover {
+      transform: scale(1.2);
+      transition: all linear ease-in-out;
+  }
+}
+
+/*693에서 819 사이*/
+@media all and (min-width:693px) and (max-width:819px) {
+
+  footer {
+      width: 100%;
+      height: 1450px;
+      position: relative;
+  }
+
+  .top {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .top .imgbg {
+      width: 100%;
+      height: 800px;
+      background-color: #eff7ff;
+      margin-top: 0px;
+      z-index: 5;
+      position: absolute;
+  }
+
+  .top img {
+      width: 100%;
+      height: auto;
+      z-index: 7;
+      position: absolute;
+  }
+
+  .top h1 {
+      width: 80%;
+      position: absolute;
+      z-index: 10;
+      font-family: 'Poppins', sans-serif;
+      color: #eff7ff;
+      font-size: 4.5vw;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, 0);
+      line-height: 35px;
+  }
+
+  .middle {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      border-bottom: 1px solid #b3b3b3;
+      align-content: space-between;
+      justify-content: space-evenly;
+      z-index: 10;
+      padding: 0 30px;
+      padding-bottom: 40px;
+      top: 270px;
+  }
+
+  .icon {
+      width: 45%;
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      z-index: 13;
+  }
+
+  .icon .icon_text {
+      width: 50%;
+      font-family: 'GmarketSansMedium';
+  }
+
+  .icon .icon_text h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+  }
+
+  .icon .icon_text span {
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-color: #ffc402;
+      text-decoration-thickness: 3px;
+      font-size: 0.8rem;
+      transition: .3s ease-in-out;
+  }
+
+  .icon .icon_text span:hover {
+      text-decoration-line: none;
+  }
+
+  .icon .icon_text p {
+      font-size: 1rem;
+  }
+
+  .bottom {
+      width: 100%;
+      background-color: #eff7ff;
+      z-index: 15;
+      position: absolute;
+      margin: 0 auto;
+      bottom: 0px;
+      padding: 0 50px;
+      height: 650px;
+  }
+
+  .bottom_textbox {
+      width: 100%;
+      height: 750px;
+      margin: 0 auto;
+      margin-top: -100px;
+      position: relative;
+  }
+
+  .bottom_box_0 {
+      width: 100%;
+  }
+
+  
+  .bottom_box_1 {
+      width: 100%;
+      height: 200px;
+      margin-top: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+
+  }
+
+  .bottom_box_2 {
+      width: 80%;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+      bottom: 0;
+  }
+
+
+  .bottom_box_0 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_1 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+      width: 100%;
+  }
+
+  .bottom_box_2 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_0 label input {
+      width: 100%;
+      height: 55px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 3px solid black;
+      background: transparent;
+      padding-top: 20px;
+      outline: none;
+  }
+
+  .bottom_box_0 label input::placeholder {
+      color: #ffcb02;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+  }
+
+  .bottom_box_0 p {
+      color: #1d1d1d;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.8rem;
+      line-height: 16px;
+  }
+
+  .bottom_box_0 button {
+      color: #fff;
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      width: 100%;
+      padding: 10px 40px;
+      margin-top: 15px;
+      background-color: #ffc402;
+      cursor: pointer;
+  }
+
+  .bottom_box_0 button:hover {
+      background-color: #f71c2e;
+      transition: .3s;
+  }
+
+  .bottom_nav2 {
+      text-align: center;
+      width: 50%;
+  }
+
+  .bottom_nav3 {
+      text-align: center;
+      font-family: 'GmarketSansMedium';
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 55px;
+
+  }
+
+  .bottom_nav1 {
+      color: #005dad;
+      text-align: center;
+      width: 100%;
+  }
+
+  .bottom_nav2 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+  }
+
+  .bottom_nav3 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+  }
+
+  .bottom_nav h1 {
+      font-size: 1.5rem;
+  }
+
+  .bottom_nav2 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav3 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav2 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_nav3 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_icon {
+      margin: 0 auto;
+      width: 240px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .bottom_icon img:hover {
+      transform: scale(1.2);
+      transition: all linear ease-in-out;
+  }
+}
+
+/*820에서 989 사이*/
+@media all and (min-width: 820px) and (max-width:989px) {
+
+  footer {
+      width: 100%;
+      height: 1250px;
+      position: relative;
+  }
+
+  .top {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .top .imgbg {
+      width: 100%;
+      height: 800px;
+      background-color: #eff7ff;
+      margin-top: 0px;
+      z-index: 5;
+      position: absolute;
+  }
+
+  .top img {
+      width: 100%;
+      height: auto;
+      z-index: 7;
+      position: absolute;
+  }
+
+  .top h1 {
+      width: 100%;
+      position: absolute;
+      z-index: 10;
+      font-family: 'Poppins', sans-serif;
+      color: #eff7ff;
+      font-size: 2.5rem;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, 0);
+      line-height: 43px;
+  }
+
+  .middle {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      border-bottom: 1px solid #b3b3b3;
+      align-content: space-between;
+      justify-content: space-evenly;
+      z-index: 10;
+      padding: 0 30px;
+      padding-bottom: 40px;
+      top: 270px;
+  }
+
+  .icon {
+      width: 45%;
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      z-index: 13;
+  }
+
+  .icon .icon_text {
+      width: 50%;
+      font-family: 'GmarketSansMedium';
+  }
+
+  .icon .icon_text h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+  }
+
+  .icon .icon_text span {
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-color: #ffc402;
+      text-decoration-thickness: 3px;
+      font-size: 0.8rem;
+      transition: .3s ease-in-out;
+  }
+
+  .icon .icon_text span:hover {
+      text-decoration-line: none;
+  }
+
+  .icon .icon_text p {
+      font-size: 1rem;
+  }
+
+  .bottom {
+      width: 100%;
+      background-color: #eff7ff;
+      z-index: 15;
+      position: absolute;
+      margin: 0 auto;
+      bottom: 0px;
+      padding: 0 50px;
+      height: 500px;
+  }
+
+  .bottom_textbox {
+      width: 100%;
+      height: 470px;
+      margin: 0 auto;
+      margin-top: -100px;
+      position: relative;
+  }
+
+  .bottom_box_0 {
+      width: 100%;
+  }
+
+  
+  .bottom_box_1 {
+      width: 50%;
+      height: 200px;
+      margin-top: 50px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+  }
+
+  .bottom_box_2 {
+      width: 50%;
+      height: 200px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+
+
+  .bottom_box_0 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_1 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+      width: 100%;
+  }
+
+  .bottom_box_2 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_0 label input {
+      width: 100%;
+      height: 55px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 3px solid black;
+      background: transparent;
+      padding-top: 20px;
+      outline: none;
+  }
+
+  .bottom_box_0 label input::placeholder {
+      color: #ffcb02;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+  }
+
+  .bottom_box_0 p {
+      color: #1d1d1d;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.8rem;
+      line-height: 16px;
+  }
+
+  .bottom_box_0 button {
+      color: #fff;
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      width: 100%;
+      padding: 10px 40px;
+      margin-top: 15px;
+      background-color: #ffc402;
+      cursor: pointer;
+  }
+
+  .bottom_box_0 button:hover {
+      background-color: #f71c2e;
+      transition: .3s;
+  }
+
+  .bottom_nav2 {
+      text-align: center;
+      width: 50%;
+  }
+
+  .bottom_nav3 {
+      text-align: center;
+      font-family: 'GmarketSansMedium';
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 55px;
+
+  }
+
+  .bottom_nav1 {
+      color: #005dad;
+      text-align: center;
+      width: 100%;
+  }
+
+  .bottom_nav2 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+  }
+
+  .bottom_nav3 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+  }
+
+  .bottom_nav h1 {
+      font-size: 1.5rem;
+  }
+
+  .bottom_nav2 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav3 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav2 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_nav3 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_icon {
+      margin: 0 auto;
+      width: 240px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .bottom_icon img:hover {
+      transform: scale(1.2);
+      transition: all linear ease-in-out;
+  }
+}
+
+/*990에서 1399 사이*/
+@media all and (min-width:990px) and (max-width:1399px) {
+  footer {
+      width: 100%;
+      height: 1150px;
+      position: relative;
+  }
+
+  .top {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .top .imgbg {
+      width: 100%;
+      height: 800px;
+      background-color: #eff7ff;
+      margin-top: 0px;
+      z-index: 5;
+      position: absolute;
+  }
+
+  .top img {
+      width: 100%;
+      height: auto;
+      z-index: 7;
+      position: absolute;
+  }
+
+  .top h1 {
+      width: 100%;
+      position: absolute;
+      z-index: 10;
+      font-family: 'Poppins', sans-serif;
+      color: #eff7ff;
+      font-size: 2.5rem;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, 0);
+      line-height: 43px;
+  }
+
+  .middle {
+      position: relative;
+      top: 400px;
+      width: 100%;
+      height: 150px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #b3b3b3;
+      z-index: 10;
+      padding: 0 30px;
+  }
+
+  .icon {
+      width: 23%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 13;
+  }
+
+  .icon .icon_text {
+      width: 50%;
+      font-family: 'GmarketSansMedium';
+  }
+
+  .icon .icon_text h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+  }
+
+  .icon .icon_text span {
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-color: #ffc402;
+      text-decoration-thickness: 3px;
+      font-size: 0.8rem;
+      transition: .3s ease-in-out;
+  }
+
+  .icon .icon_text span:hover {
+      text-decoration-line: none;
+  }
+
+  .icon .icon_text p {
+      font-size: 1rem;
+  }
+
+  .bottom {
+      width: 100%;
+      background-color: #eff7ff;
+      z-index: 15;
+      position: absolute;
+      margin: 0 auto;
+      bottom: 0px;
+      padding: 0 50px;
+  }
+
+  .bottom_textbox {
+      width: 100%;
+      height: 480px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: -100px;
+  }
+
+  .bottom_box_0 {
+      width: 32%;
+      height: 400px;
+  }
+
+  .bottom_box_1 {
+      width: 32%;
+      height: 400px;
+  }
+
+  .bottom_box_2 {
+      width: 32%;
+      height: 400px;
+  }
+
+  .bottom_box_0 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_1 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_2 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_0 label input {
+      width: 300px;
+      height: 55px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 3px solid black;
+      background: transparent;
+      padding-top: 20px;
+      outline: none;
+  }
+
+  .bottom_box_0 label input::placeholder {
+      color: #ffcb02;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+  }
+
+  .bottom_box_0 p {
+      color: #1d1d1d;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.7rem;
+      line-height: 16px;
+  }
+
+  .bottom_box_0 button {
+      color: #fff;
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 40px;
+      margin-top: 15px;
+      background-color: #ffc402;
+      cursor: pointer;
+  }
+
+  .bottom_box_0 button:hover {
+      background-color: #f71c2e;
+      transition: .3s;
+  }
+
+  .bottom_nav2 {
+      text-align: center;
+  }
+
+  .bottom_nav3 {
+      text-align: center;
+      font-family: 'GmarketSansMedium';
+
+  }
+
+  .bottom_nav1 {
+      color: #005dad;
+      text-align: center;
+  }
+
+  .bottom_nav2 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+  }
+
+  .bottom_nav3 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-top: 30px;
+  }
+
+  .bottom_nav h1 {
+      font-size: 1.5rem;
+  }
+
+  .bottom_nav2 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav3 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav2 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_nav3 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_icon {
+      margin: 0 auto;
+      width: 240px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .bottom_icon img:hover {
+      transform: scale(1.2);
+      transition: all linear ease-in-out;
+  }
+}
+
+/*1400 이상 */
+@media all and (min-width:1400px) {
+ 
+  footer {
+      width: 100%;
+      height: 1100px;
+      margin-top: 300px;
+      position: relative;
+  }
+
+  .top {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .top .imgbg {
+      width: 100%;
+      height: 900px;
+      background-color: #eff7ff;
+      z-index: 5;
+      position: absolute;
+  }
+
+  .top img {
+      width: 100%;
+      height: auto;
+      z-index: 7;
+      position: absolute;
+  }
+
+  .top h1 {
+      position: absolute;
+      z-index: 10;
+      font-family: 'Poppins', sans-serif;
+      color: #eff7ff;
+      font-size: 3.3vw;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, 0);
+      line-height: 75px;
+      width: 100%;
+  }
+
+  .middle {
+      position: relative;
+      top: 450px;
+      width: 1300px;
+      height: 150px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #b3b3b3;
+      z-index: 10;
+  }
+
+  .icon {
+      width: 23%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 13;
+  }
+
+  .icon .icon_text {
+      width: 58%;
+      background-color: #eff7ff;
+      font-family: 'GmarketSansMedium';
+  }
+
+  .icon .icon_text h3 {
+      background-color: #eff7ff;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .icon .icon_text span {
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-color: #ffc402;
+      text-decoration-thickness: 3px;
+      font-size: 0.8rem;
+  }
+
+  .icon .icon_text span:hover {
+      text-decoration-line: none;
+  }
+
+  .icon .icon_text p {
+      font-size: 1rem;
+  }
+
+  .bottom {
+      width: 100%;
+      height: 300px;
+      background-color: #eff7ff;
+      margin: 0 auto;
+      z-index: 15;
+      position: absolute;
+      bottom: 0;
+      margin: 0 auto;
+  }
+
+  .bottom_textbox {
+      width: 1300px;
+      height: 300px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: -100px;
+  }
+
+  
+  .bottom_box_0 {
+      width: 32%;
+      height: 300px;
+  }
+
+  
+  .bottom_box_1 {
+      width: 32%;
+      height: 300px;
+  }
+
+  .bottom_box_2 {
+      width: 32%;
+      height: 300px;
+  }
+
+  .bottom_box_0 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_1 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_2 h1 {
+      font-family: 'Poppins', sans-serif;
+      line-height: 40px;
+      margin-bottom: 15px;
+      color: #005dad;
+  }
+
+  .bottom_box_0 label input {
+      width: 300px;
+      height: 55px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 3px solid black;
+      background: transparent;
+      padding-top: 20px;
+      outline: none;
+  }
+
+  .bottom_box_0 label input::placeholder {
+      color: #ffcb02;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+  }
+
+  .bottom_box_0 p {
+      color: #1d1d1d;
+      font-family: 'GmarketSansMedium';
+      font-size: 0.7rem;
+      line-height: 16px;
+  }
+
+  .bottom_box_0 button {
+      color: #fff;
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 40px;
+      margin-top: 15px;
+      background-color: #ffc402;
+      cursor: pointer;
+  }
+
+  .bottom_box_0 button:hover {
+      background-color: #f71c2e;
+      transition: .3s;
+  }
+
+  .bottom_nav2 {
+      text-align: center;
+      float: left;
+      margin-top: 5px;
+      margin-left: 50px;
+  }
+
+  .bottom_nav3 {
+      text-align: center;
+      float: right;
+      font-family: 'GmarketSansMedium';
+      margin-top: 5px;
+      margin-right: 50px;
+  }
+
+  .bottom_nav1 {
+      color: #005dad;
+      text-align: center;
+  }
+
+  .bottom_nav2 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+  }
+
+  .bottom_nav3 h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+  }
+
+  .bottom_nav h1 {
+      font-size: 1.5rem;
+  }
+
+  .bottom_nav2 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav3 ul a li {
+      font-family: 'GmarketSansMedium';
+      font-size: 1rem;
+      margin: 10px 0;
+  }
+
+  .bottom_nav2 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_nav3 ul li:hover {
+      color: #ffc402;
+  }
+
+  .bottom_icon {
+      margin: 0 auto;
+      width: 240px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .bottom_icon img:hover {
+      transform: scale(1.2);
+      transition: all linear ease-in-out;
+  }
+}

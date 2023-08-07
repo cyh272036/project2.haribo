@@ -20,337 +20,1149 @@
 /*font-family: 'Poppins', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*slogan*/
-
-#slogan {
-    width: 100%;
-    height: 100px;
-    background-color: #003461;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 3px solid #eee;
+@media all and (min-width:800px) and (max-width:1069px){
+    #slogan {
+        width: 100%;
+        height: 150px;
+        background-color: #003461;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 3px solid #eee;
+    }
+    
+    #slogan h3 {
+        width: 50%;
+        font-size: 1.8rem;
+        color: #eee;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    
+    /*하리보 제품군*/
+    
+    section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    a{
+        text-align: center;
+    }
+    
+    
+    .first {
+        width: 100%;
+        height: 670px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .one {
+        background-color: #d3a22d;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: .3s linear;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+    
+    .one img{
+        width: 450px;
+        transition: .3s ease-in-out;
+    }
+    
+    .one img:hover {
+        transform: scale(1.1);
+    }
+    
+    .second {
+        width: 100%;
+        height: 670px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .two{
+        background-color: #07a4e7;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: .3s linear;
+        overflow: hidden;
+    }
+    
+    .two img {
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .two a img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .three {
+        background-color: #ffa41b;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s linear;
+        overflow: hidden;
+    }
+    
+    .three img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .three img:hover {
+        transform: scale(1.1);
+    }
+    
+    .four {
+        background-color: #de0512;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .four img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .four img:hover {
+        transform: scale(1.1);
+    }
+    
+    .four .worm {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: none;
+    }
+    
+    .five {
+        background-color: #67b339;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    
+    .five img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    
+    .five img:hover {
+        transform: scale(1.1);
+    }
+    
+    .five .fruity {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: block;
+    }
+    
+    .third {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .six {
+        background-color: #52b640;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .six img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .six img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .seven {
+        background-color: #f5c210;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .seven img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .seven img:hover {
+        transform: scale(1.1);
+    }
+    
+    .eight {
+        background-color: #a495bc;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .eight img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .eight img:hover{
+        transform: scale(1.1);
+    }
+    
+    .nine {
+        background-color: #006ac3;
+        width: 50%;
+        height: 335px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .nine_textbox{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        font-family: 'GmarketSans', 'san-serif';
+    }
+    
+    .nine_textbox h1 {
+        font-size: 2.5em;
+        line-height: 50px;
+        color: #eee;
+        margin-bottom: 15px;
+    }
+    
+    .nine_textbox span {
+        font-size: 1.5em;
+        color: #eee;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+    
+    .nine_textbox span:hover {
+        color: #ffd43a;
+    }
+    
+    
+    /*슬라이드*/
+    
+    article{
+        width: 100%;
+        height: auto;
+    }
+    
+    .question {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 300px;
+        margin-bottom: 150px;
+        position: relative;
+        overflow: hidden;
+        background-color: #005dad;
+    }
+    
+    .slideWrap {
+        width: 300%;
+        height: 400px;
+    }
+    
+    .slide_1{
+        width: 33.33%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        float: left;
+    }
+    
+    .slidebox {
+        margin: 0 auto;
+        width: 70%;
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .slidebox img{
+        width: 300px;
+        border-radius: 200px;
+    }
+    
+    .q_textbox{
+        width: 60%;
+        font-family: 'GmarketSans', 'san-serif';
+        color: #fff;
+        margin-left: 50px;
+    }
+    
+    .q_textbox h1{ 
+        font-size: 3rem; 
+        color: #f5c210;
+        font-family: 'Poppins', sans-serif;
+        word-break: keep-all;
+    }
+    
+    .q_textbox h2{ 
+        font-size: 2rem; 
+        color: #f5c210;
+        word-break: keep-all;
+    }
+    
+    .q_textbox p{
+        font-size: 1.3rem;
+        cursor: pointer;
+        margin-bottom: 20px;
+        word-break: keep-all;
+        line-height: 30px;
+    }
+    
+    
+    .q_textbox span{
+        font-size: 1.1rem;
+        transition: .3s linear;
+        cursor: pointer;
+        background-color: #f5c210;
+        border-radius: 20px;
+        padding: 10px 50px;
+    }
+    
+    .q_textbox span:hover{
+        color: #fff;
+        background-color: #07a4e7;
+    }
+    
+    .prev {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        line-height: 80px;
+        font-size: 70px;
+        font-family: 'GmarketSans', 'san-serif';
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .next {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        line-height: 80px;
+        font-size: 70px;
+        font-family: 'GmarketSans', 'san-serif';
+        cursor: pointer;
+        color: #fff;
+    }
+      
 }
 
-#slogan h3 {
-    width: 80%;
-    font-size: 2rem;
-    color: #eee;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+
+@media all and (min-width:1070px) and (max-width:1399px){
+    #slogan {
+        width: 100%;
+        height: 100px;
+        background-color: #003461;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 3px solid #eee;
+    }
+    
+    #slogan h3 {
+        width: 80%;
+        font-size: 1.7rem;
+        color: #eee;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    
+    /*하리보 제품군*/
+    
+    section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    a{
+        text-align: center;
+    }
+    
+    
+    .first {
+        width: 50%;
+        height: 670px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .one {
+        background-color: #d3a22d;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: .3s linear;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+    
+    .one img{
+        width: 450px;
+        transition: .3s ease-in-out;
+    }
+    
+    .one img:hover {
+        transform: scale(1.1);
+    }
+    
+    .second {
+        width: 50%;
+        height: 670px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .two{
+        background-color: #07a4e7;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: .3s linear;
+        overflow: hidden;
+    }
+    
+    .two img {
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .two a img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .three {
+        background-color: #ffa41b;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s linear;
+        overflow: hidden;
+    }
+    
+    .three img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .three img:hover {
+        transform: scale(1.1);
+    }
+    
+    .four {
+        background-color: #de0512;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .four img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .four img:hover {
+        transform: scale(1.1);
+    }
+    
+    .four .worm {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: none;
+    }
+    
+    .five {
+        background-color: #67b339;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    
+    .five img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    
+    .five img:hover {
+        transform: scale(1.1);
+    }
+    
+    .five .fruity {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: block;
+    }
+    
+    .third {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .six {
+        background-color: #52b640;
+        width: 25%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .six img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .six img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .seven {
+        background-color: #f5c210;
+        width: 25%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .seven img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .seven img:hover {
+        transform: scale(1.1);
+    }
+    
+    .eight {
+        background-color: #a495bc;
+        width: 25%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .eight img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .eight img:hover{
+        transform: scale(1.1);
+    }
+    
+    .nine {
+        background-color: #006ac3;
+        width: 25%;
+        height: 335px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .nine_textbox{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        font-family: 'GmarketSans', 'san-serif';
+    }
+    
+    .nine_textbox h1 {
+        font-size: 1.5em;
+        line-height: 35px;
+        color: #eee;
+        margin-bottom: 15px;
+    }
+    
+    .nine_textbox span {
+        font-size: 0.9em;
+        color: #eee;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+    
+    .nine_textbox span:hover {
+        color: #ffd43a;
+    }
+    
+    
+    /*슬라이드*/
+    
+    article{
+        width: 100%;
+        height: auto;
+    }
+    
+    .question {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 300px;
+        margin-bottom: 150px;
+        position: relative;
+        overflow: hidden;
+        background-color: #005dad;
+    }
+    
+    .slideWrap {
+        width: 300%;
+        height: 400px;
+    }
+    
+    .slide_1{
+        width: 33.33%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        float: left;
+    }
+    
+    .slidebox {
+        margin: 0 auto;
+        width: 70%;
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .slidebox img{
+        width: 300px;
+        border-radius: 200px;
+    }
+    
+    .q_textbox{
+        width: 60%;
+        font-family: 'GmarketSans', 'san-serif';
+        color: #fff;
+        margin-left: 50px;
+    }
+    
+    .q_textbox h1{ 
+        font-size: 3rem; 
+        color: #f5c210;
+        font-family: 'Poppins', sans-serif;
+        word-break: keep-all;
+    }
+    
+    .q_textbox h2{ 
+        font-size: 2rem; 
+        color: #f5c210;
+        word-break: keep-all;
+    }
+    
+    .q_textbox p{
+        font-size: 1.3rem;
+        cursor: pointer;
+        margin-bottom: 20px;
+        word-break: keep-all;
+        line-height: 30px;
+    }
+    
+    
+    .q_textbox span{
+        font-size: 1.1rem;
+        transition: .3s linear;
+        cursor: pointer;
+        background-color: #f5c210;
+        border-radius: 20px;
+        padding: 10px 50px;
+    }
+    
+    .q_textbox span:hover{
+        color: #fff;
+        background-color: #07a4e7;
+    }
+    
+    .prev {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        line-height: 80px;
+        font-size: 70px;
+        font-family: 'GmarketSans', 'san-serif';
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .next {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        line-height: 80px;
+        font-size: 70px;
+        font-family: 'GmarketSans', 'san-serif';
+        cursor: pointer;
+        color: #fff;
+    }
+      
 }
 
-/*하리보 제품군*/
-
-section {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+@media all and (min-width:1400px){
+    #slogan {
+        width: 100%;
+        height: 100px;
+        background-color: #003461;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 3px solid #eee;
+    }
+    
+    #slogan h3 {
+        width: 80%;
+        font-size: 2rem;
+        color: #eee;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    
+    /*하리보 제품군*/
+    
+    section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    a{
+        text-align: center;
+    }
+    
+    
+    .first {
+        width: 50%;
+        height: 670px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .one {
+        background-color: #d3a22d;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: .3s linear;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+    
+    .one img{
+        width: 450px;
+        transition: .3s ease-in-out;
+    }
+    
+    .one img:hover {
+        transform: scale(1.1);
+    }
+    
+    .second {
+        width: 50%;
+        height: 670px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .two{
+        background-color: #07a4e7;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: .3s linear;
+        overflow: hidden;
+    }
+    
+    .two img {
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .two a img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .three {
+        background-color: #ffa41b;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s linear;
+        overflow: hidden;
+    }
+    
+    .three img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .three img:hover {
+        transform: scale(1.1);
+    }
+    
+    .four {
+        background-color: #de0512;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .four img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .four img:hover {
+        transform: scale(1.1);
+    }
+    
+    .four .worm {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: none;
+    }
+    
+    .five {
+        background-color: #67b339;
+        width: 50%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    
+    .five img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    
+    .five img:hover {
+        transform: scale(1.1);
+    }
+    
+    .five .fruity {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: block;
+    }
+    
+    .third {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .six {
+        background-color: #52b640;
+        width: 25%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .six img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .six img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .seven {
+        background-color: #f5c210;
+        width: 25%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .seven img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .seven img:hover {
+        transform: scale(1.1);
+    }
+    
+    .eight {
+        background-color: #a495bc;
+        width: 25%;
+        height: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .eight img{
+        width: 200px;
+        transition: .3s ease-in-out;
+    }
+    
+    .eight img:hover{
+        transform: scale(1.1);
+    }
+    
+    .nine {
+        background-color: #006ac3;
+        width: 25%;
+        height: 335px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .nine_textbox{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        font-family: 'GmarketSans', 'san-serif';
+    }
+    
+    .nine_textbox h1 {
+        font-size: 2.2em;
+        line-height: 45px;
+        color: #eee;
+        margin-bottom: 15px;
+    }
+    
+    .nine_textbox span {
+        font-size: 1.4em;
+        color: #eee;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+    
+    .nine_textbox span:hover {
+        color: #ffd43a;
+    }
+    
+    
+    /*슬라이드*/
+    
+    article{
+        width: 100%;
+        height: auto;
+    }
+    
+    .question {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 300px;
+        margin-bottom: 150px;
+        position: relative;
+        overflow: hidden;
+        background-color: #005dad;
+    }
+    
+    .slideWrap {
+        width: 300%;
+        height: 400px;
+    }
+    
+    .slide_1{
+        width: 33.33%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        float: left;
+    }
+    
+    .slidebox {
+        margin: 0 auto;
+        width: 70%;
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .slidebox img{
+        width: 500px;
+        border-radius: 200px;
+    }
+    
+    .q_textbox{
+        width: 60%;
+        font-family: 'GmarketSans', 'san-serif';
+        color: #fff;
+        margin-left: 100px;
+    }
+    
+    .q_textbox h1{ 
+        font-size: 4.2rem; 
+        color: #f5c210;
+        font-family: 'Poppins', sans-serif;
+        word-break: keep-all;
+    }
+    
+    .q_textbox h2{ 
+        font-size: 3rem; 
+        color: #f5c210;
+        word-break: keep-all;
+    }
+    
+    .q_textbox p{
+        font-size: 1.3rem;
+        cursor: pointer;
+        margin-bottom: 20px;
+        word-break: keep-all;
+    }
+    
+    
+    .q_textbox span{
+        font-size: 1.1rem;
+        transition: .3s linear;
+        cursor: pointer;
+        background-color: #f5c210;
+        border-radius: 20px;
+        padding: 10px 50px;
+    }
+    
+    .q_textbox span:hover{
+        color: #fff;
+        background-color: #07a4e7;
+    }
+    
+    .prev {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        line-height: 80px;
+        font-size: 70px;
+        font-family: 'GmarketSans', 'san-serif';
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .next {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        line-height: 80px;
+        font-size: 70px;
+        font-family: 'GmarketSans', 'san-serif';
+        cursor: pointer;
+        color: #fff;
+    }
+      
 }
 
-a{
-    text-align: center;
-}
-
-
-.first {
-    width: 50%;
-    height: 670px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.one {
-    background-color: #d3a22d;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: .3s linear;
-    overflow: hidden;
-    background-repeat: no-repeat;
-}
-
-.one img{
-    width: 450px;
-    transition: .3s ease-in-out;
-}
-
-.one img:hover {
-    transform: scale(1.1);
-}
-
-.second {
-    width: 50%;
-    height: 670px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.two{
-    background-color: #07a4e7;
-    width: 50%;
-    height: 335px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: .3s linear;
-    overflow: hidden;
-}
-
-.two img {
-    width: 200px;
-    transition: .3s ease-in-out;
-}
-
-.two a img:hover {
-    transform: scale(1.1);
-}
-
-
-.three {
-    background-color: #ffa41b;
-    width: 50%;
-    height: 335px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .3s linear;
-    overflow: hidden;
-}
-
-.three img{
-    width: 200px;
-    transition: .3s ease-in-out;
-}
-
-.three img:hover {
-    transform: scale(1.1);
-}
-
-.four {
-    background-color: #de0512;
-    width: 50%;
-    height: 335px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.four img{
-    width: 200px;
-    transition: .3s ease-in-out;
-}
-
-.four img:hover {
-    transform: scale(1.1);
-}
-
-.four .worm {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    display: none;
-}
-
-.five {
-    background-color: #67b339;
-    width: 50%;
-    height: 335px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-
-.five img{
-    width: 200px;
-    transition: .3s ease-in-out;
-}
-
-
-.five img:hover {
-    transform: scale(1.1);
-}
-
-.five .fruity {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    display: block;
-}
-
-.third {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.six {
-    background-color: #52b640;
-    width: 25%;
-    height: 335px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.six img{
-    width: 200px;
-    transition: .3s ease-in-out;
-}
-
-.six img:hover {
-    transform: scale(1.1);
-}
-
-
-.seven {
-    background-color: #f5c210;
-    width: 25%;
-    height: 335px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.seven img{
-    width: 200px;
-    transition: .3s ease-in-out;
-}
-
-.seven img:hover {
-    transform: scale(1.1);
-}
-
-.eight {
-    background-color: #a495bc;
-    width: 25%;
-    height: 335px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.eight img{
-    width: 200px;
-    transition: .3s ease-in-out;
-}
-
-.eight img:hover{
-    transform: scale(1.1);
-}
-
-.nine {
-    background-color: #006ac3;
-    width: 25%;
-    height: 335px;
-    position: relative;
-    overflow: hidden;
-}
-
-.nine_textbox{
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    font-family: 'GmarketSans', 'san-serif';
-}
-
-.nine_textbox h1 {
-    font-size: 2.2em;
-    line-height: 45px;
-    color: #eee;
-    margin-bottom: 15px;
-}
-
-.nine_textbox span {
-    font-size: 1em;
-    color: #eee;
-    cursor: pointer;
-    transition: .2s ease-in-out;
-}
-
-.nine_textbox span:hover {
-    color: #ffd43a;
-}
-
-
-/*슬라이드*/
-
-article{
-    width: 100%;
-    height: auto;
-}
-
-.question {
-    width: 1300px;
-    margin: 0 auto;
-}
-
-.slide_1{
-    display: flex;
-    width: 100%;
-    height: 600px;
-    background-color: palegoldenrod;
-    margin-bottom: 50px;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.question img{
-    width: 40%;
-    border-radius: 200px;
-}
-
-.q_textbox{
-    width: 40%;
-    font-family: 'GmarketSans', 'san-serif';
-}
-
-.q_textbox h1{ 
-    font-size: 4rem; 
-    margin-bottom: 20px;
-    color: #f5c210;
-    font-family: 'Poppins', sans-serif;
-}
-
-.q_textbox h2{ 
-    font-size: 2rem; 
-    margin-bottom: 20px;
-}
-
-.q_textbox p{
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin-bottom: 30px;
-}
-
-
-.q_textbox span{
-    font-size: 1.1rem;
-    transition: .3s linear;
-    cursor: pointer;
-    background-color: #f5c210;
-    border-radius: 20px;
-    padding: 10px 30px;
-}
-
-.q_textbox span:hover{
-    color: #fff;
-    background-color: #07a4e7;
-}
