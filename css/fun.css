@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/*G마켓 산스*/
+/*font-family: 'GmarketSans', san-serif;*/
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*poppins*/
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media all and (min-width:800px) and (max-width:999px){
+    .photo {
+        width: 100%;
+        margin-top: 200px;
+        margin-bottom: 300px;
+        font-family: 'Poppins', sans-serif;
+        height: 1230px;
+        position: relative;
+    }
+    
+    .photo h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: #005dad;
+    }
+    
+    .board {
+        width: 85%;
+        height: 1000px;
+        perspective: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .card {
+        width: 300px;
+        height: 300px;
+        margin: 1em;
+        transform: rotateY(0deg);
+        transition: 1s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        font-family: 'GmarketSansMedium';
+    }
+    
+    .card-side {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5em;
+        font-size: 1.5rem;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    
+    .card-side-front {
+        z-index: 1;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .card-side-back {
+        background: #005dad;
+        transform: rotateY(180deg);
+    }
+    
+    .textbox {
+        width: 80%;
+        color: #fff;
+    }
+    
+    .textbox h2{
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .textbox p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .card:hover {
+        transform:  rotateY(180deg);
+    }
+    
+    .more {
+        font-family: 'GmarketSansMedium';
+        border: none;
+        border-radius: 20px;
+        background-color: #ffc402;
+        color: #fff;
+        padding: 10px 50px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0%);
+        cursor: pointer;
+    }
+    
+    .more:hover {
+        background-color: #ed1c24;
+        transition: .2s;
+    }
+    }
+
+@media all and (min-width:1000px){
+.photo {
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    font-family: 'Poppins', sans-serif;
+    height: 900px;
+    position: relative;
+}
+
+.photo h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #005dad;
+}
+
+.board {
+    width: 1000px;
+    height: 700px;
+    perspective: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    margin: 1em;
+    transform: rotateY(0deg);
+    transition: 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    font-family: 'GmarketSansMedium';
+}
+
+.card-side {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-side-front {
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-side-back {
+    background: #005dad;
+    transform: rotateY(180deg);
+}
+
+.textbox {
+    width: 80%;
+    color: #fff;
+}
+
+.textbox h2{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.textbox p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.card:hover {
+    transform:  rotateY(180deg);
+}
+
+.more {
+    font-family: 'GmarketSansMedium';
+    border: none;
+    border-radius: 20px;
+    background-color: #ffc402;
+    color: #fff;
+    padding: 10px 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+}
+
+.more:hover {
+    background-color: #ed1c24;
+    transition: .2s;
+}
+}

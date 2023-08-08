@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HARIBO</title>
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" href="img/fabicon.png">
-
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -24,7 +26,7 @@
             <div id="a">
                 <a href="product.html">Products</a>
                 <a href="#">About us</a>
-                <a href="#">Fun</a>
+                <a href="fun.html">Fun</a>
                 <img src="img/menu.png" alt="" id="ch">
             </div>
             <img src="img/menu_ham.png" id="b">
@@ -37,7 +39,7 @@
                     <div class="listbox">
                         <a href="product.html">Products</a>
                         <a href="#">About us</a>
-                        <a href="#">Fun</a>
+                        <a href="fun.html">Fun</a>
                     </div>
                 </div>
             </div>
@@ -397,73 +399,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-
-        $(document).ready(function () {
-            $('#b').click(function () {
-                $('#myNav').css('width', '100%');
-            });
-
-            $('.closebtn').click(function () {
-                $('#myNav').css('width', '0');
-            });
-        });
-
-
-        $(document).ready(function () {
-            $('#ck').click(function () {
-                $('#boxWrap').fadeIn();
-            });
-
-            $('#cbtn').click(function () {
-                $('#boxWrap').fadeOut();
-            });
-        });
-
-
-        $(document).ready(function () {
-
-            var pixelToMove = 105;
-
-            $("#third").mousemove(function (e) {
-
-                var width = $(this).innerWidth();
-                var height = $(this).innerHeight();
-
-                var newValueX = (e.clientX / width) * pixelToMove;
-                var newValueY = (e.clientY / height) * pixelToMove;
-
-                $(this).children('#ck').css({ left: newValueX + '%', top: newValueY + '%' });
-
-            });
-        });
-
-        $(document).ready(function () {
-            let color = ['#ece400', '#ea6300', '#a7b532', '#ab000f', '#d50300', '#dfdbd1'];
-            let idx;
-
-            $('.product_img').hover(function () {
-                idx = $(this).index();
-                $('.bgcolor').css({ backgroundColor: color[idx] });
-            }, function () {
-                $('.bgcolor').css({ backgroundColor: '#ffc402' });
-            });
-        });
-
-        function slide() {
-            $('.slide').stop().animate({ marginLeft: -500 }, 1200, function () {
-                $('.slide li:first').appendTo('.slide');
-                $('.slide').css({ marginLeft: 0 });
-            });
-        }
-        setInterval(slide, 3500);
-
-        $('#cbtn').on('click', function () {
-            $('#video').trigger('pause');
-        });
-
-    </script>
 
 </body>
 

@@ -2129,10 +2129,10 @@
       width: 240px;
       display: flex;
       justify-content: space-between;
+      transition: all linear ease-in-out;
   }
 
   .bottom_icon img:hover {
       transform: scale(1.2);
-      transition: all linear ease-in-out;
   }
 }
