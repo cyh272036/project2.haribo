@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".one a img").hover(function () {
+                $(this).parents('.one').css("background-image", "url('../img/gold_back.jpg')");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.one').css("background", "#d3a22d");
+                $(this).parent().next().fadeOut("fast");
+            });
+
+            $(".two a img").hover(function () {
+                $(this).parents('.two').css("background-image", "url('../img/space.jpg')");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.two').css("background", "#07a4e7");
+                $(this).parent().next().fadeOut();
+            });
+
+            $(".three a img").hover(function () {
+                $(this).parents('.three').css("background-image", "url('../img/cola_back.jpg')");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.three').css("background", "#ffa41b");
+                $(this).parent().next().fadeOut();
+            });
+
+            $(".four a img").hover(function () {
+                $(this).parents('.four').css("background-image", "url('../img/worm.jpg')");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.four').css("background", "#de0512");
+                $(this).parent().next().fadeOut();
+            });
+
+            $(".five a img").hover(function () {
+                $(this).parents('.five').css("background-image", "url('../img/fruity.jpg')");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.five').css("background", "#67b339");
+                $(this).parent().next().fadeOut();
+            });
+
+            $(".six a img").hover(function () {
+                $(this).parents('.six').css("background-image", "url('../img/worm_sour.jpg')");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.six').css("background", "#00c9a1");
+                $(this).parent().next().fadeOut();
+            });
+
+            $(".seven a img").hover(function () {
+                $(this).parents('.seven').css("background-image", "url('../img/cola_back_2.jpg')");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.seven').css("background", "#f5c210");
+                $(this).parent().next().fadeOut();
+            });
+
+            $(".eight a img").hover(function () {
+                $(this).parents('.eight').css("background-image", "url('../img/grape_back.jpg')");
+                $(this).parent().next().fadeIn();
+            }, function () {
+                $(this).parents('.eight').css("background", "#a495bc");
+                $(this).parent().next().fadeOut("fast");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
