@@ -3,7 +3,7 @@
 $(document).ready(function () {
     
     let bgc = ['#d3a22d', '#07a4e7', '#ffa41b', '#de0512', '#67b339', '#00c9a1', '#f5c210', '#a495bc']
-    let bg = ['../img/gold_back.jpg', '../img/space.jpg', '../img/cola_back.jpg', '../img/worm.jpg', '../img/fruity.jpg', '../img/worm_sour.jpg', '../img/cola_back_2.jpg', '../img/grape_back.jpg']
+    let bg = ['img/gold_back.jpg', 'img/space.jpg', 'img/cola_back.jpg', 'img/worm.jpg', 'img/fruity.jpg', 'img/worm_sour.jpg', 'img/cola_back_2.jpg', 'img/grape_back.jpg']
 
     var index;
 
