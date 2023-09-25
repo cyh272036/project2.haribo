@@ -30,9 +30,11 @@
 
     .main_contant {
         width: 100%;
-        margin-top: 100px;
+        height: auto;
+        padding-top: 0px;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         text-align: center;
@@ -41,15 +43,15 @@
 
     .main_contant .text_box_1 {
         width: 80%;
-        height: 300px;
+        height: auto;
         color: #fff;
         font-family: 'GmarketSans';
         margin: 0 auto;
     }
 
     .main_contant .text_box_1 h1 {
-        font-size: 2.7rem;
-        line-height: 55px;
+        font-size: 2rem;
+        line-height: 45px;
         filter: drop-shadow(4px 4px 4px #252525);
         margin-bottom: 10px;
     }
@@ -57,19 +59,20 @@
     .main_contant .text_box_1 p {
         width: 55%;
         margin: 0 auto;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         filter: drop-shadow(2px 2px 2px #252525);
     }
 
     .main_contant .text_box_1 button {
-        font-size: 1rem;
+        font-size: 0.6rem;
         font-family: 'GmarketSans';
-        padding: 10px 40px;
+        width: 100px;
+        height: 25px;
         border: none;
         border-radius: 30px;
         background-color: #ffc402;
         color: #fff;
-        margin-top: 30px;
+        margin-top: 20px;
         cursor: pointer;
         filter: drop-shadow(3px 3px 3px #001142);
     }
@@ -79,22 +82,23 @@
     }
 
     .main_contant .img_box_2 {
-        width: 83%;
-        height: 150px;
+        width: 90%;
+        height: auto;
         position: relative;
         cursor: pointer;
-        top: 80px;
+        top: 30px;
         left: 50%;
         transform: translate(-50%,0);
+        margin-bottom: 20%;
     }
 
     .main_contant .img_box_2 a img[alt="100years"] {
         position: absolute;
-        bottom: -80px;
-        left: 10%;
-        width: 140px;
-        height: 160px;
-        z-index: 3;
+        width: 30%;
+        z-index: 20;
+        bottom: 5%;
+        left: 8%;
+        
     }
 
     .main_contant .img_box_2 a img[alt="100years"]:hover {
@@ -104,11 +108,8 @@
 
     .main_contant .img_box_2 a img[alt="goldbear"] {
         filter: drop-shadow(5px 5px 5px #252525);
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
         width: 100%;
+
     }
 
     /*main */
@@ -118,16 +119,16 @@
         height: 250px;
         background-color: #005dad;
         margin: 0 auto;
-        position: relative;
-        top: -5px;
+        /* position: relative;
+        top: -5px; */
     }
 
     .headline {
         width: 55%;
         text-align: center;
         font-family: 'GmarketSans', san-serif;
-        font-size: 1rem;
-        line-height: 30px;
+        font-size: 0.8rem;
+        line-height: 25px;
         color: #fff;
         padding-top: 0px;
         margin: 0 auto;
@@ -137,7 +138,7 @@
     .headline h2 pre {
         margin-bottom: 10px;
         font-weight: 300;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .headline h2 span {
@@ -149,8 +150,11 @@
         text-align: center;
         font-family: 'GmarketSansMedium';
         font-weight: 300;
-        font-size: 0.7rem;
         margin-top: 30px;
+    }
+
+    .subline p{
+        font-size: 0.6rem;
     }
 
     /*main */
@@ -230,7 +234,7 @@
 
     #color {
         width: 100%;
-        height: 1250px;
+        height: auto;
         background-color: #005dad;
         z-index: 3;
         position: relative;
@@ -240,13 +244,13 @@
     #color h1 {
         text-align: center;
         font-family: 'Poppins', sans-serif;
-        padding-top: 100px;
-        font-size: 1.8rem;
+        padding-top: 80px;
+        font-size: 1.5rem;
         color: #fff;
         margin-bottom: 10px;
         width: 60%;
         margin: 0 auto;
-        line-height: 35px;
+        line-height: 25px;
     }
 
     #color h1 span {
@@ -263,7 +267,7 @@
 
     #forth {
         width: 100%;
-        height: 900px;
+        height: auto;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -323,6 +327,7 @@
         font-size: 2.7vw;
         margin-top: 17px;
         text-align: center;
+        margin-bottom: 50%;
     }
 
     #forth .text_box_2_1 p {
@@ -354,7 +359,7 @@
 
     .mission {
         width: 70%;
-        height: 42vh;
+        height: auto;
         position: absolute;
         left: 50%;
         bottom: 50px;
@@ -373,7 +378,7 @@
     }
 
     .mission .text_box_3 span {
-        font-size: 4vw;
+        font-size: 0.8rem;
         color: #fff;
     }
 
@@ -381,9 +386,10 @@
         width: 100%;
         height: auto;
         color: #005dad;
-        font-size: 6.3vw;
+        font-size: 1.4rem;
         margin-bottom: 5px;
-        line-height: 40px;
+        word-break: keep-all;
+
     }
 
     .mission .text_box_3 button {
@@ -391,8 +397,10 @@
         border: none;
         font-family: 'GmarketSansMedium';
         border-radius: 20px;
-        padding: 8px 50px;
+        width: 100px;
+        height: 30px;
         margin-top: 18px;
+        font-size: 11px;
     }
 
     .mission .text_box_3 button:hover {
@@ -419,10 +427,10 @@
 
     #slider2 {
         width: 90%;
-        height: 1000px;
+        height: auto;
         margin: 0 auto;
         position: relative;
-        margin-top: 150px;
+        margin-top: 80px;
         margin-bottom: 80px;
         display: flex;
         flex-wrap: wrap;
@@ -438,6 +446,7 @@
         overflow: hidden;
         border-top-left-radius: 350px;
         border-top-right-radius: 350px;
+        margin-bottom: 50px;
     }
 
     .slide {
@@ -1132,7 +1141,7 @@
 
     #color {
         width: 100%;
-        height: 1900px;
+        height: auto;
         background-color: #005dad;
         z-index: 3;
         position: relative;
@@ -1141,13 +1150,13 @@
     #color h1 {
         text-align: center;
         font-family: 'Poppins', sans-serif;
-        padding-top: 180px;
-        font-size: 2.1rem;
+        padding-top: 120px;
+        font-size: 2.4rem;
         color: #fff;
         margin-bottom: 10px;
         width: 60%;
         margin: 0 auto;
-        line-height: 35px;
+        line-height: 40px;
     }
 
     #color h1 span {
@@ -1164,7 +1173,7 @@
 
     #forth {
         width: 100%;
-        height: 900px;
+        height: auto;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -1173,7 +1182,7 @@
     }
 
     #forth a {
-        margin-top: 105px;
+        margin-top: 20%;
     }
 
     #forth img[alt="find1"]:hover {
@@ -1224,6 +1233,7 @@
         font-size: 2.7vw;
         margin-top: 17px;
         text-align: center;
+        margin-bottom: 20%;
     }
 
     #forth .text_box_2_1 p {
@@ -1241,7 +1251,6 @@
         z-index: 15;
         position: relative;
         background-color: #005dad;
-        top: -50px;
     }
 
     .bgcolor {
