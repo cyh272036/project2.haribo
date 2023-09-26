@@ -431,7 +431,6 @@
         margin: 0 auto;
         position: relative;
         margin-top: 80px;
-        margin-bottom: 80px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -486,6 +485,7 @@
         width: 76%;
         margin: 0 auto;
         margin-bottom: 20px;
+        word-break: keep-all;
     }
 
     .text_box_4 a span {
@@ -500,26 +500,33 @@
     }
 
     #slidewrap2 {
-        width: 320px;
-        height: 230px;
+        width: 100%;
+        height: auto;
     }
 
     .slide_2 {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
 
     .imgbox {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         overflow: hidden;
         border-radius: 150px;
         position: relative;
+        margin-bottom: 20px;
     }
 
     .imgbox img {
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
         transition: .3s;
         cursor: pointer;
     }
@@ -550,7 +557,7 @@
         height: 120px;
         position: relative;
         z-index: 100;
-        bottom: -950px;
+        bottom: -650px;
     }
 
     .bar .bar1 {
@@ -591,8 +598,8 @@
 
     #slider3 {
         width: 100%;
-        margin-top: 150px;
         margin: 0 auto;
+        background-color: sandybrown;
     }
 
     .text_box_5 {
@@ -629,7 +636,7 @@
         width: 100%;
         position: relative;
         z-index: 40;
-        margin-top: 100px;
+        margin-top: 50px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -672,7 +679,7 @@
 
     .bgcolor2_1 {
         width: 100%;
-        height: 1400px;
+        height: 1180px;
         background-color: #eff7ff;
         z-index: 30;
         position: absolute;
@@ -682,7 +689,7 @@
 
     .img_box_sq {
         width: 100%;
-        height: 1000px;
+        height: 830px;
         position: absolute;
         top: -520px;
         display: flex;
@@ -692,12 +699,13 @@
 
     .one {
         position: absolute;
-        top: 0;
+        top: 0px;
         left: 2%;
         z-index: 50;
-        width: 120px;
+        width: 80px;
         transform: rotate(25deg);
     }
+    
 
     .two {
         position: absolute;
@@ -707,27 +715,30 @@
         transition: .3s ease-in-out;
     }
 
+    .two img{
+        width: 250px;
+    }
+
     .textbox {
-        width: 300px;
+        width: 100%;
         height: auto;
         position: absolute;
         text-align: center;
-        left: 7px;
-        display: none;
+        display: none; 
     }
 
     .textbox h3 {
         color: #000;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 10px;
     }
 
     .textbox p {
         color: #000;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         font-family: 'GmarketSansMedium';
-        line-height: 18px;
+        line-height: 15px;
     }
 
     .two:hover {
@@ -745,8 +756,7 @@
         left: 17%;
         z-index: 40;
         transform: translate(-50%, 0%);
-        width: 80px;
-        
+        width: 60px;
     }
 
     .four {
@@ -755,6 +765,10 @@
         left: 50%;
         transform: translate(-50%, 0%);
         transition: .3s;
+    }
+
+    .four img{
+        width: 250px;
     }
 
     .four:hover {
@@ -768,10 +782,10 @@
 
     .five {
         position: absolute;
-        right: 5%;
-        bottom: 0%;
+        right: 3%;
+        bottom: 60px;
         transform: rotate(150deg);
-        width: 90px;
+        width: 80px;
     }
 
 
@@ -781,6 +795,10 @@
         left: 50%;
         transform: translate(-50%,0);
         transition: .3s;
+    }
+
+    .six img{
+        width: 250px;
     }
 
     .six:hover {
@@ -794,7 +812,7 @@
     .eight {
         position: absolute;
         bottom: -20%;
-        width: 100px;
+        width: 70px;
         transform: rotate(5deg);
         right: 4%;
     }
@@ -803,7 +821,7 @@
 
     .bgcolor3 {
         width: 100%;
-        height: 1700px;
+        height: auto;
         background-color: #eff7ff;
         margin: 0 auto;
         position: relative;
@@ -812,8 +830,7 @@
 
     .text_box_5_1 {
         text-align: center;
-        padding-top: 350px;
-        z-index: 300;
+        z-index: 400;
     }
 
     .text_box_5_1 h1 {
@@ -845,11 +862,11 @@
     .img_box_4 {
         width: 100%;
         height: 1000px;
-        margin-top: 100px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: space-evenly;
+        padding-bottom: 80px;
     }
 
     .box {
@@ -867,7 +884,7 @@
         width: 80%;
         position: relative;
         cursor: pointer;
-        height: 260px;
+        height: 230px;
         overflow: hidden;
         top: 50%;
         transform: translate(0,-50%);
@@ -1493,7 +1510,6 @@
 
     #slider3 {
         width: 100%;
-        margin-top: 150px;
         margin: 0 auto;
     }
 
